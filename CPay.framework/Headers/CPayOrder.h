@@ -19,6 +19,7 @@
 @property (nonatomic, copy) NSString *body;
 @property (nonatomic, copy) NSString *ipnUrl;
 @property (nonatomic, copy) NSString *scheme;
+@property (nonatomic, copy) NSString *universalLink;
 @property (nonatomic, copy) NSString *callbackUrl;
 @property (nonatomic, assign) BOOL allowDuplicate;
 

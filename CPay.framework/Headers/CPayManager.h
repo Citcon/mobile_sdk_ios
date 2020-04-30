@@ -28,6 +28,11 @@
 + (BOOL)processOpenUrl:(UIApplication *)application url:(NSURL *)url standbyCallback:(CPayOrderResultBlock)callback;
 
 /**
+ * Call this function in -application: continueUserActivity:
+ */
++ (BOOL)processUserActivity:(nonnull NSUserActivity *)userActivity;
+
+/**
  * Create an order request with detail parameters
  *
  * @param referenceId       Set a reference id string
@@ -61,5 +66,18 @@
  * @param completion    completion callback, check the 'CPayCheckResultBlock' for details
  */
 + (void)inquireResult:(NSString *)transactionId order:(CPayOrder*)order method:(NSString *)method completion:(CPayCheckResultBlock)completion;
+
+/**
+ * Check if WeChat application is installed
+ *
+ * @param wxAppId       Wechat app ID
+ * @param universalLink  Apple Universal Link
+ */
++ (BOOL)isWechatInstalled:(NSString *)wxAppId universalLink:(NSString*)universalLink;
+
+/**
+ * Get SDK version
+ */
++ (NSString*)getVersion;
 
 @end
