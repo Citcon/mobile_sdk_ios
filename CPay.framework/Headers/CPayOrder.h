@@ -22,6 +22,7 @@
 @property (nonatomic, copy) NSString *universalLink;
 @property (nonatomic, copy) NSString *callbackUrl;
 @property (nonatomic, assign) BOOL allowDuplicate;
+@property (nonatomic, copy) NSString *transCurrency;
 
 @property (nonatomic, retain, readwrite) NSString *transactionId;
 
