@@ -17,8 +17,8 @@
 @property (nonatomic, retain, readonly) NSString * currency;
 @property (nonatomic, retain, readonly) NSString * time;
 @property (nonatomic, retain, readonly) NSString * status;
-@property (nonatomic, retain, readonly) NSString * refundStatus;
-@property (nonatomic, retain, readonly) NSString * refundedAmount;
+@property (nonatomic, retain, readonly) NSString * refund_status;
+@property (nonatomic, retain, readonly) NSString * refunded_amount;
 @property (nonatomic, retain, readonly) NSString * note;
 
 @end
