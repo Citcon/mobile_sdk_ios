@@ -24,6 +24,7 @@
 @property (nonatomic, copy) NSString *callbackUrl;
 @property (nonatomic, assign) BOOL allowDuplicate;
 @property (nonatomic, copy) NSString *transCurrency;
+@property (nonatomic, copy) NSString *extra;
 
 @property (nonatomic, strong) UIViewController *controller;
 

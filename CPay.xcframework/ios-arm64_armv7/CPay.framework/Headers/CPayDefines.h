@@ -121,8 +121,8 @@ static NSString * const kPayPath = @"payment/pay_app";
 static NSString * const kInquirePath = @"payment/inquire";
 
 // URL path for AMS & UPOP
-static NSString * const kAMSPayPath = @"payment3/pay_app";
-static NSString * const kAMSInquirePath = @"payment3/inquire";
+static NSString * const kAMSPayPath = @"payment/pay_app";
+static NSString * const kAMSInquirePath = @"payment/inquire";
 
 // Environment
 static NSString * tokenKey = @"";
