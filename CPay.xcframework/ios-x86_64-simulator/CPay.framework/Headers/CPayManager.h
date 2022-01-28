@@ -59,6 +59,7 @@
               ipnUrl:(NSString *_Nonnull)ipnUrl
          callbackUrl:(NSString *_Nonnull)callbackUrl
       allowDuplicate:(BOOL)allowDuplicate
+      isAcceleration:(BOOL)isAcceleration
               scheme:(NSString*_Nonnull)scheme
   rootViewController:(UIViewController*_Nonnull)controller
           completion:(CPayOrderResultBlock _Nullable )completion;
@@ -75,6 +76,7 @@
  * @param ipnUrl                      notify url string
  * @param callbackUrl           callback by server when the payment finished
  * @param allowDuplicate    allow dumplicate the order
+ * @param isAcceleration    allow accelerate CN pay
  * @param ext                             extra string, eg. "{\"reference2\":\"123456789\"\,\"reference3\":\"xxxx\"}"
  * @param scheme                      your app scheme, set in your App's info.plist, eg. cpaysdk, required in Alipay
  * @param completion             completion callback, check the 'CPayOrderResultBlock' for details
@@ -89,6 +91,7 @@
               ipnUrl:(NSString *_Nonnull)ipnUrl
          callbackUrl:(NSString *_Nonnull)callbackUrl
       allowDuplicate:(BOOL)allowDuplicate
+      isAcceleration:(BOOL)isAcceleration
                 ext:(NSString *_Nonnull)ext
               scheme:(NSString*_Nonnull)scheme
   rootViewController:(UIViewController*_Nonnull)controller
@@ -129,6 +132,7 @@
                   currency:(NSString *_Nullable)currency
                     method:(NSString *_Nullable)method
                     vendor:(NSString *_Nullable)vendor
+             isAccelerated:(BOOL)acceleration
                 completion:(CPayCheckResultBlock _Nullable )completion;
 
 /**

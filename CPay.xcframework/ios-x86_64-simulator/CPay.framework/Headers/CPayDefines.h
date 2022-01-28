@@ -45,7 +45,8 @@ static NSString * const kGcashScheme = @"gcash://";
 typedef NS_ENUM(NSInteger, CPayMode){
     CPayModePROD = 0,     // default, Production Mode
     CPayModeUAT,          // UAT Mode
-    CPayModeDEV           // Develop Mode
+    CPayModeDEV,          // Develop Mode
+    CPayModeQA,           // QA Mode
 };
 
 // API Path Type Enum
@@ -69,6 +70,14 @@ typedef NS_ENUM(NSInteger, PayType) {
     PayTypeBkash,        // Bkash
     PayTypeCC,           // CC Pay
     PayTypeTouchnGo,     // Touch'N Go
+    PayTypeCard,         // KCP & SBPS - card
+    PayTypePayco,        // KCP payco
+    PayTypeNaverPay,     // KCP NaverPay
+    PayTypeBankTransfer, // KCP BankTransfer
+    PayTypeLinePay,      // SBPS LinePay
+    PayTypePaypay,       // SBPS Paypay
+    PayTypeRakutenPay,   // SBPS RakutenPay
+    PayTypeLaunchType,   // Return URL type
     PayTypeUnknown       // Unknown Payment Method
 };
 
@@ -87,6 +96,13 @@ static NSString * const kBkash = @"bkash";
 static NSString * const kEasypaisa = @"easypaisa";
 static NSString * const kJkopay = @"jkopay";
 static NSString * const kTouchnGo = @"touchngo";
+static NSString * const kCard = @"card";
+static NSString * const kPayco = @"payco";
+static NSString * const kNaverPay = @"naverpay";
+static NSString * const kBankTransfer = @"banktransfer";
+static NSString * const kLinePay = @"linepay";
+static NSString * const kPaypay = @"paypay";
+static NSString * const kRakutenPay = @"rakutenpay";
 
 // fields
 static NSString * const kAmount = @"amount";
@@ -101,28 +117,26 @@ static NSString * const kUnionDev = @"01";
 
 
 // Default API
-static NSString * const kDevUSDDomainPrefix = @"https://dev.citconpay.com/";        // Development Mode for USD
-static NSString * const kUATUSDDomainPrefix = @"https://uat.citconpay.com/";        // UAT Mode for USD
-static NSString * const kProdUSDDomainPrefix = @"https://citconpay.com/";           // Production Mode for USD
+static NSString * const kDevUSDDomainPrefix = @"https://dev.citconpay.com/";
+static NSString * const kUATUSDDomainPrefix = @"https://uat.citconpay.com/";
+static NSString * const kProdUSDDomainPrefix = @"https://citconpay.com/";
+
+// CN pay acceleration API
+static NSString * const kDevCNPayPrefix = @"https://api-dev.citconpay.cn/";
+static NSString * const kUATCNPayPrefix = @"https://api-uat.citconpay.cn/";
+static NSString * const kProdCNPayPrefix = @"https://api.citconpay.cn/";
 
 // CNY
-static NSString * const kDevCNYDomainPrefix = @"https://dev.citconpay.cn/";         // Development Mode for CNY
-static NSString * const kUATCNYDomainPrefix = @"https://uat.citconpay.cn/";         // UAT Mode for CNY
-static NSString * const kProdCNYDomainPrefix = @"https://citconpay.cn/";            // Production Mode for CNY
+static NSString * const kDevCNYDomainPrefix = @"https://dev.citconpay.cn/";
+static NSString * const kUATCNYDomainPrefix = @"https://uat.citconpay.cn/";
+static NSString * const kProdCNYDomainPrefix = @"https://citconpay.cn/";
 
-// AMS & UNIONPAY
-static NSString * const kDevAMSDomainPrefix = @"https://dev.citconpay.com/";        // Development Mode for AMS(eg. gcash, dana, alipay_hk, kaokaopay, upop)
-static NSString * const kUATAMSDomainPrefix = @"https://uat.citconpay.com/";        // UAT Mode for AMS
-static NSString * const kProdAMSDomainPrefix = @"https://citconpay.com/";           // Production Mode for AMS
-
+// QA
+static NSString * const kQADomainPrefix = @"https://qa.qa01.citconpay.com/";
 
 // URL path
 static NSString * const kPayPath = @"payment/pay_app";
 static NSString * const kInquirePath = @"payment/inquire";
-
-// URL path for AMS & UPOP
-static NSString * const kAMSPayPath = @"payment/pay_app";
-static NSString * const kAMSInquirePath = @"payment/inquire";
 
 // Environment
 static NSString * tokenKey = @"";
@@ -159,6 +173,20 @@ static NSString * currencyUSD = @"USD";
         pt = PayTypeJkopay; \
     else if([vendor isEqualToString: kAlipay]) \
         pt = PayTypeAlipay; \
+    else if([vendor isEqualToString: kCard]) \
+        pt = PayTypeCard; \
+    else if([vendor isEqualToString: kPayco]) \
+        pt = PayTypePayco; \
+    else if([vendor isEqualToString: kNaverPay]) \
+        pt = PayTypeNaverPay; \
+    else if([vendor isEqualToString: kBankTransfer]) \
+        pt = PayTypeBankTransfer; \
+    else if([vendor isEqualToString: kLinePay]) \
+        pt = PayTypeLinePay; \
+    else if([vendor isEqualToString: kPaypay]) \
+        pt = PayTypePaypay; \
+    else if([vendor isEqualToString: kRakutenPay]) \
+        pt = PayTypeRakutenPay; \
     (pt); \
 })\
 
