@@ -59,6 +59,40 @@
               ipnUrl:(NSString *_Nonnull)ipnUrl
          callbackUrl:(NSString *_Nonnull)callbackUrl
       allowDuplicate:(BOOL)allowDuplicate
+      isAcceleration:(BOOL)isAcceleration
+              scheme:(NSString*_Nonnull)scheme
+  rootViewController:(UIViewController*_Nonnull)controller
+          completion:(CPayOrderResultBlock _Nullable )completion;
+
+/**
+ * Create an order request with detail parameters (new ADD "ext" field)
+ *
+ * @param referenceId           set a reference id string
+ * @param subject                    set the order subject string
+ * @param body                           set the order body string
+ * @param amount                      set the order amount, 100 means 1 USD if the currency is USD
+ * @param currency                  set the order currency, eg. USD, CNY, JPY.
+ * @param vendor                      set the order's payment method, eg. wechatpay, alipay
+ * @param ipnUrl                      notify url string
+ * @param callbackUrl           callback by server when the payment finished
+ * @param allowDuplicate    allow dumplicate the order
+ * @param isAcceleration    allow accelerate CN pay
+ * @param ext                             extra string, eg. "{\"reference2\":\"123456789\"\,\"reference3\":\"xxxx\"}"
+ * @param scheme                      your app scheme, set in your App's info.plist, eg. cpaysdk, required in Alipay
+ * @param completion             completion callback, check the 'CPayOrderResultBlock' for details
+ * @param controller             root viewcontroller, required in UnionPay(upop)
+ */
++ (void)requestOrder:(NSString *_Nonnull)referenceId
+             subject:(NSString *_Nonnull)subject
+                body:(NSString *_Nonnull)body
+              amount:(NSString *_Nonnull)amount
+            currency:(NSString *_Nonnull)currency
+              vendor:(NSString *_Nonnull)vendor
+              ipnUrl:(NSString *_Nonnull)ipnUrl
+         callbackUrl:(NSString *_Nonnull)callbackUrl
+      allowDuplicate:(BOOL)allowDuplicate
+      isAcceleration:(BOOL)isAcceleration
+                ext:(NSString *_Nonnull)ext
               scheme:(NSString*_Nonnull)scheme
   rootViewController:(UIViewController*_Nonnull)controller
           completion:(CPayOrderResultBlock _Nullable )completion;
@@ -84,6 +118,22 @@
                 order:(CPayOrder*_Nonnull)order
                method:(NSString *_Nonnull)method
            completion:(CPayCheckResultBlock _Nonnull )completion;
+
+/**
+ * Check the order payment result by reference. Make sure your reference id is unique.
+ *
+ * @param referenceId       reference id of the order
+ * @param currency              currency of the order
+ * @param method                  eg. real
+ * @param vendor                  vendor
+ * @param completion         completion callback, check the 'CPayCheckResultBlock' for details
+ */
++ (void)inquireResultByRef:(NSString *_Nullable)referenceId
+                  currency:(NSString *_Nullable)currency
+                    method:(NSString *_Nullable)method
+                    vendor:(NSString *_Nullable)vendor
+             isAccelerated:(BOOL)acceleration
+                completion:(CPayCheckResultBlock _Nullable )completion;
 
 /**
  * Check if WeChat application is installed
