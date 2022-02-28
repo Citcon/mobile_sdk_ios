@@ -39,6 +39,11 @@ static NSString * const kAlipayCNScheme = @"alipays://";
 static NSString * const kKaKaoScheme = @"kakaokompassauth://";
 static NSString * const kAlipayHKScheme = @"alipayhk://";
 static NSString * const kGcashScheme = @"gcash://";
+static NSString * const kNaverScheme = @"naversearchapp://";
+static NSString * const kLineScheme = @"linepay://";
+static NSString * const kRakutenScheme = @"rakutenpay://";
+static NSString * const kPaycoScheme = @"payco://";
+static NSString * const kPayPayScheme = @"paypay://";
 
 
 // API run environment

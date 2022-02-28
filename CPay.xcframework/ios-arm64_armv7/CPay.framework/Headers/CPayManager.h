@@ -171,6 +171,31 @@
 + (BOOL)isGcashInstalled;
 
 /**
+ * Check if the Naver Pay application is installed
+ */
++ (BOOL)isNaverInstalled;
+
+/**
+ * Check if the Line Pay application is installed
+ */
++ (BOOL)isLinePayInstalled;
+
+/**
+ * Check if the Rakuten Pay application is installed
+ */
++ (BOOL)isRakutenPayInstalled;
+
+/**
+ * Check if Payco application is installed
+ */
++ (BOOL)isPaycoPayInstalled;
+
+/**
+ * Check if Paypay application is installed
+ */
++ (BOOL)isPayPayInstalled;
+
+/**
  * Get the SDK version
  */
 + (NSString* _Nonnull)getVersion;
