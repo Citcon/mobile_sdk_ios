@@ -44,8 +44,7 @@
 
 @property (nonatomic, retain, readwrite) NSString *transactionId;
 
-@property (nonatomic, assign) PayType payType;
-
 - (void)completedOrder:(CPayOrderResult *)result;
+- (NSDictionary *)serialized;
 
 @end

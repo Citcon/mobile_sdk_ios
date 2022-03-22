@@ -17,6 +17,9 @@
 @property (nonatomic, assign, readonly) NSInteger  resultStatus;
 @property (nonatomic, retain, readonly) CPayOrder *order;
 
+/// Generate an order based on the result of @NSDictionary and the original order requested.
+/// @param result The result of order.
+/// @param order The original order requested.
 + (CPayOrderResult *)orderResultWithResult:(id)result order:(CPayOrder *)order;
 
 @end

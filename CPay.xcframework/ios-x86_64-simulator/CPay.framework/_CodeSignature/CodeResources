@@ -46,23 +46,23 @@
 		</data>
 		<key>Headers/CPayDefines.h</key>
 		<data>
-		1diPGGItTNfZi1OELlWVwn23w0c=
+		2rLXqsEs7fcvNwFkal4aaDHkMDw=
 		</data>
 		<key>Headers/CPayManager.h</key>
 		<data>
-		g2tMffrDnKJ/NwGXD+oAflRUq7Y=
+		zCbhccdSbuiHavjkvvB3xiT0skc=
 		</data>
 		<key>Headers/CPayOrder.h</key>
 		<data>
-		MwzAID44nSBeohWFNbNRmOu3Luc=
+		Wl7zCC2uBOn/yF8KXFSxOf4LN8Y=
 		</data>
 		<key>Headers/CPayOrderResult.h</key>
 		<data>
-		11gSTbF/ewge8XwIf5ZmU5SkVXk=
+		QD68iCveUvwEOwWyZIkDnERKglA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4TgMQ9A5W0YkgA/GOsnQay8KZJc=
+		gY+OTtvSwQEyLsHuZ2wApeupQEk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -189,44 +189,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1diPGGItTNfZi1OELlWVwn23w0c=
+			2rLXqsEs7fcvNwFkal4aaDHkMDw=
 			</data>
 			<key>hash2</key>
 			<data>
-			zuGxArxGI06w8JEouR6SYVwJAL0gpom9DAbUFA6W2uQ=
+			J2wVgr7H3bSoucfApyrDXFGZLni5tkAZ0eHYrBJ1s8w=
 			</data>
 		</dict>
 		<key>Headers/CPayManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g2tMffrDnKJ/NwGXD+oAflRUq7Y=
+			zCbhccdSbuiHavjkvvB3xiT0skc=
 			</data>
 			<key>hash2</key>
 			<data>
-			TiIvgz0dB37xUeEBJ2ymSXVcFgvphoUC5CwBlXYZ4Ic=
+			HZJplh4/gjWeLpYQ7CEWz6T1CF1l2xALgxsKbvOEbSY=
 			</data>
 		</dict>
 		<key>Headers/CPayOrder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MwzAID44nSBeohWFNbNRmOu3Luc=
+			Wl7zCC2uBOn/yF8KXFSxOf4LN8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			PQEk/0Jm/uZMGCgBbsXu3pclAEMOvZiabWx+TQ88hH4=
+			rxhfXtRRAvSEDWcE26zY3cyPz3Q2Yz/ejcQ6z7V+JNU=
 			</data>
 		</dict>
 		<key>Headers/CPayOrderResult.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			11gSTbF/ewge8XwIf5ZmU5SkVXk=
+			QD68iCveUvwEOwWyZIkDnERKglA=
 			</data>
 			<key>hash2</key>
 			<data>
-			eoNpY4G+R4xO7B2DMZNxjYLJtVd6vj+9EYtTgLXYrBk=
+			75vYN8vtJK9ZIIw5CcyQmXMvsDkbxg1zWHa15nHYw3w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
