@@ -1,0 +1,6 @@
+framework module AlipayExt {
+  umbrella header "AlipayExt-umbrella.h"
+
+  export *
+  module * { export * }
+}

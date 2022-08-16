@@ -1,0 +1,6 @@
+framework module CPay {
+  umbrella header "CPay.h"
+
+  export *
+  module * { export * }
+}
