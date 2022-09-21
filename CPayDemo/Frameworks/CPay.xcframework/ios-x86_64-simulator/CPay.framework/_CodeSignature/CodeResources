@@ -36,34 +36,6 @@
 		<data>
 		v8pstv1HbmoW3gdlKZzSqn31WHY=
 		</data>
-		<key>Frameworks/WechatPayH5Ext.framework/Info.plist</key>
-		<data>
-		HxkpC+5EgIo9BQDoXyB6zNAuLco=
-		</data>
-		<key>Frameworks/WechatPayH5Ext.framework/WechatPayH5Ext</key>
-		<data>
-		C87ReTWNLTde2icyvuwgSXWjfFo=
-		</data>
-		<key>Frameworks/WechatPayH5Ext.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		vCGYSMa6BTzSHRSl1nBW7/dKURI=
-		</data>
-		<key>Frameworks/WechatPayH5Ext.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>Frameworks/WechatPayH5Ext.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		7DnubJ+NG5rAaEEBct8fKvMG1/A=
-		</data>
-		<key>Frameworks/WechatPayH5Ext.framework/_CodeSignature/CodeResources</key>
-		<data>
-		OwWmrXHd6WKCLlznIkPhahJhaxE=
-		</data>
-		<key>Frameworks/WechatPayH5Ext.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
 		<key>Headers/CPay.h</key>
 		<data>
 		Gv4gpHkoMoVWoY80MwGMQQ5g0JE=
@@ -153,55 +125,6 @@
 			<key>hash2</key>
 			<data>
 			dE2ndHqk8MuNrgTt2yHONxfP38nq2HUgB4t2jKRl8SI=
-			</data>
-		</dict>
-		<key>Frameworks/WechatPayH5Ext.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ULouHJKdG8toJDXxnO8Mejl6lkbvr6UXjxSfHizl9YQ=
-			</data>
-		</dict>
-		<key>Frameworks/WechatPayH5Ext.framework/WechatPayH5Ext</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SOdlRSxs3/bdXMLGDhYgbQMdMwPp4bohs/5txD2ZS4Q=
-			</data>
-		</dict>
-		<key>Frameworks/WechatPayH5Ext.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IRWVOHtyds/Jn7mEHIv+ubTUU1MeXNeTHluM4MP0JW8=
-			</data>
-		</dict>
-		<key>Frameworks/WechatPayH5Ext.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>Frameworks/WechatPayH5Ext.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zsK23MKRcz6Q3LCFKzVXRV/RGbuasnbQ+rKxQ9Ewyag=
-			</data>
-		</dict>
-		<key>Frameworks/WechatPayH5Ext.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Uhb66nAH3TlgrX6CNqoYFZbjY3akmhxBVgh3ENhVqEc=
-			</data>
-		</dict>
-		<key>Frameworks/WechatPayH5Ext.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>Headers/CPay.h</key>
