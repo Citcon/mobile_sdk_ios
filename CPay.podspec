@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint COPaySDK.podspec' to ensure this is a
+# Be sure to run `pod lib lint CPay.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'COPaySDK'
+  s.name             = 'CPay'
   s.version          = '2.6.2'
-  s.summary          = 'UPI mobile SDK for iOS.'
+  s.summary          = 'Online mobile SDK for iOS.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
