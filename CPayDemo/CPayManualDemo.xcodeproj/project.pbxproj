@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0996E04E2A5FD04200F35D87 /* CPay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0996E04C2A5FCFF300F35D87 /* CPay.xcframework */; };
-		0996E04F2A5FD04200F35D87 /* CPay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0996E04C2A5FCFF300F35D87 /* CPay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09AF8FD82A60656500421A02 /* CPay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09326ACA2A60638500D955B5 /* CPay.xcframework */; };
+		09AF8FD92A60656500421A02 /* CPay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09326ACA2A60638500D955B5 /* CPay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F1943AB027F19A1B000B1DC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */; };
 		F1943AB627F19A1B000B1DC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1943AB527F19A1B000B1DC9 /* ViewController.m */; };
 		F1943AB927F19A1B000B1DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1943AB727F19A1B000B1DC9 /* Main.storyboard */; };
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0996E04F2A5FD04200F35D87 /* CPay.xcframework in Embed Frameworks */,
+				09AF8FD92A60656500421A02 /* CPay.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,7 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0996E04C2A5FCFF300F35D87 /* CPay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CPay.xcframework; path = ../../CPay.xcframework; sourceTree = "<group>"; };
+		09326ACA2A60638500D955B5 /* CPay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CPay.xcframework; path = ../CPay.xcframework; sourceTree = "<group>"; };
 		F1943AAB27F19A1B000B1DC9 /* CPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1943AAE27F19A1B000B1DC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,18 +57,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0996E04E2A5FD04200F35D87 /* CPay.xcframework in Frameworks */,
+				09AF8FD82A60656500421A02 /* CPay.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09326AC92A60636500D955B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09326ACA2A60638500D955B5 /* CPay.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1943AA227F19A1B000B1DC9 = {
 			isa = PBXGroup;
 			children = (
 				F1943AAD27F19A1B000B1DC9 /* CPayDemo */,
-				F1943AC727F19A80000B1DC9 /* Frameworks */,
+				09326AC92A60636500D955B5 /* Frameworks */,
 				F1943AAC27F19A1B000B1DC9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,14 +108,6 @@
 				F1F02CF927F5827600FEB09D /* AppInstance.m */,
 			);
 			path = CPayDemo;
-			sourceTree = "<group>";
-		};
-		F1943AC727F19A80000B1DC9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0996E04C2A5FCFF300F35D87 /* CPay.xcframework */,
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +145,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F1943AA627F19A1B000B1DC9 /* Build configuration list for PBXProject "CPayDemo" */;
+			buildConfigurationList = F1943AA627F19A1B000B1DC9 /* Build configuration list for PBXProject "CPayManualDemo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -390,7 +390,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1943AA627F19A1B000B1DC9 /* Build configuration list for PBXProject "CPayDemo" */ = {
+		F1943AA627F19A1B000B1DC9 /* Build configuration list for PBXProject "CPayManualDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1943AC227F19A1C000B1DC9 /* Debug */,

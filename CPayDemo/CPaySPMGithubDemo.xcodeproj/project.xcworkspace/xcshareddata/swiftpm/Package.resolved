@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mobile_sdk_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/citcon-aoyansheng/mobile_sdk_ios",
+      "state" : {
+        "branch" : "master",
+        "revision" : "789e365be3fcac2b935bfcdae3efb4da3be331e8"
+      }
+    }
+  ],
+  "version" : 2
+}
