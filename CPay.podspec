@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPay'
-  s.version          = '2.6.2'
+  s.version          = '2.6.3'
   s.summary          = 'Online mobile SDK for iOS.'
 
 # This description is used to generate tags and improve search results.
@@ -32,8 +32,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Citcon/mobile_sdk_ios.git', :tag => 'v' + s.version.to_s }
 
 
-  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => true , 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-   }
+  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => true }
 
   s.libraries = 'stdc++'#,'z','c++'
   s.requires_arc = true
