@@ -1,14 +1,15 @@
 //
 //  CPayOrder.h
-//  AlixPayDemo
+//  CPay
 //
-//  Created by 方彬 on 11/2/13.
-//
+//  Created by long.zhao on 3/27/22.
 //
 
 #import <Foundation/Foundation.h>
 #import "CPayDefines.h"
 @import UIKit;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface CPayOrder : NSObject
 
@@ -40,12 +41,19 @@
 @property (nonatomic, copy) NSString *taxExemptAmount;
 @property (nonatomic, copy) NSString *totalTaxAmount;
 
+@property (nonatomic, copy) NSString *installmentId;
+@property (nonatomic, copy) NSString *installmentNumber;
+@property (nonatomic, copy) NSString *installmentQuantity;
+
+@property (nonatomic, copy) NSString *cardIssuer;
+@property (nonatomic, copy) NSString *totalDiscountCode;
+@property (nonatomic, copy) NSString *cashReceiptType;
+
 @property (nonatomic, strong) UIViewController *controller;
+@property (nonatomic, assign) CPayUnionMode unionPayMode;
 
 @property (nonatomic, retain, readwrite) NSString *transactionId;
 
-@property (nonatomic, assign) PayType payType;
-
-- (void)completedOrder:(CPayOrderResult *)result;
-
 @end
+
+NS_ASSUME_NONNULL_END

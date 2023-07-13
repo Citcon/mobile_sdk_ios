@@ -2,11 +2,10 @@
 //  CPay.h
 //  CPay
 //
-//  Created by Siwei Y. on 6/5/17.
-//  Copyright © 2017 Dinolab. All rights reserved.
+//  Created by long.zhao on 3/25/22.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "CPayDefines.h"
 #import "CPayManager.h"
 #import "CPayOrder.h"
