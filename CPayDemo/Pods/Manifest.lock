@@ -1,0 +1,16 @@
+PODS:
+  - CPay (2.6.3)
+
+DEPENDENCIES:
+  - CPay (from `../`)
+
+EXTERNAL SOURCES:
+  CPay:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CPay: fe0b4735c2df4e3d84b4f45f7793793b1cdbdf02
+
+PODFILE CHECKSUM: 3b01e0fec2ddc2665d52c678dbf25ac8fba37429
+
+COCOAPODS: 1.12.1
