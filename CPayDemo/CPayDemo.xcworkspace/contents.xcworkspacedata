@@ -2,10 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CPayManualDemo.xcodeproj">
+      location = "group:CPaySPMDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CPaySPMDemo.xcodeproj">
+      location = "group:CPaySPMGithubDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CPayManualDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CPayCocoapodsDemo.xcodeproj">

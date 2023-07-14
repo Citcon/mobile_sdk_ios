@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0932D8872A60539400B82A87 /* mobile_sdk_ios in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0932D8842A60534D00B82A87 /* mobile_sdk_ios */; };
-		09AF8FD72A60646000421A02 /* CPay.xcframework in Frameworks */ = {isa = PBXBuildFile; productRef = 09AF8FD62A60646000421A02 /* CPay.xcframework */; };
+		09326AC82A60623600D955B5 /* CPay.xcframework in Frameworks */ = {isa = PBXBuildFile; productRef = 09326AC72A60623600D955B5 /* CPay.xcframework */; };
 		F1943AB027F19A1B000B1DC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */; };
 		F1943AB627F19A1B000B1DC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1943AB527F19A1B000B1DC9 /* ViewController.m */; };
 		F1943AB927F19A1B000B1DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1943AB727F19A1B000B1DC9 /* Main.storyboard */; };
@@ -26,7 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0932D8872A60539400B82A87 /* mobile_sdk_ios in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,7 +32,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0932D8842A60534D00B82A87 /* mobile_sdk_ios */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = mobile_sdk_ios; path = ..; sourceTree = "<group>"; };
 		F1943AAB27F19A1B000B1DC9 /* CPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1943AAE27F19A1B000B1DC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09AF8FD72A60646000421A02 /* CPay.xcframework in Frameworks */,
+				09326AC82A60623600D955B5 /* CPay.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +71,6 @@
 		0932D8832A60534D00B82A87 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				0932D8842A60534D00B82A87 /* mobile_sdk_ios */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -136,7 +132,7 @@
 			);
 			name = CPayDemo;
 			packageProductDependencies = (
-				09AF8FD62A60646000421A02 /* CPay.xcframework */,
+				09326AC72A60623600D955B5 /* CPay.xcframework */,
 			);
 			productName = CPayDemo;
 			productReference = F1943AAB27F19A1B000B1DC9 /* CPayDemo.app */;
@@ -156,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F1943AA627F19A1B000B1DC9 /* Build configuration list for PBXProject "CPaySPMDemo" */;
+			buildConfigurationList = F1943AA627F19A1B000B1DC9 /* Build configuration list for PBXProject "CPaySPMGithubDemo" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -165,6 +161,9 @@
 				Base,
 			);
 			mainGroup = F1943AA227F19A1B000B1DC9;
+			packageReferences = (
+				09326AC62A60623600D955B5 /* XCRemoteSwiftPackageReference "mobile_sdk_ios" */,
+			);
 			productRefGroup = F1943AAC27F19A1B000B1DC9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -343,6 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QR8NK5X24;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6QR8NK5X24;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CPayDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -376,6 +376,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QR8NK5X24;
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6QR8NK5X24;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CPayDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -401,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1943AA627F19A1B000B1DC9 /* Build configuration list for PBXProject "CPaySPMDemo" */ = {
+		F1943AA627F19A1B000B1DC9 /* Build configuration list for PBXProject "CPaySPMGithubDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1943AC227F19A1C000B1DC9 /* Debug */,
@@ -421,9 +422,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		09326AC62A60623600D955B5 /* XCRemoteSwiftPackageReference "mobile_sdk_ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/citcon-aoyansheng/mobile_sdk_ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		09AF8FD62A60646000421A02 /* CPay.xcframework */ = {
+		09326AC72A60623600D955B5 /* CPay.xcframework */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 09326AC62A60623600D955B5 /* XCRemoteSwiftPackageReference "mobile_sdk_ios" */;
 			productName = CPay.xcframework;
 		};
 /* End XCSwiftPackageProductDependency section */
