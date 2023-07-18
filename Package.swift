@@ -4,13 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "CPaySDK",
+    name: "CPay",
     platforms: [.iOS(.v11)],
     products: [
-        .library(name: "CPay.xcframework", targets: ["CPay"])
+        .library(name: "CPay", targets: ["CPay"])
+    ],
+    dependencies:[
+
     ],
     targets: [
         .binaryTarget(name: "CPay", path: "./CPay.xcframework")
     ]
 )
-

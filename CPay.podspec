@@ -34,6 +34,10 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => true }
 
+# https://github.com/CocoaPods/CocoaPods/issues/10065#issuecomment-694266259
+#  s.pod_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => true, 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+#  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
   s.libraries = 'stdc++'#,'z','c++'
   s.requires_arc = true
 
