@@ -36,10 +36,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *phone;
 @property (nonatomic, copy) NSString *email;
 @property (nonatomic, copy) NSString *consumerReference;
+@property (nonatomic, copy) NSString *consumerStreet;
+@property (nonatomic, copy) NSString *consumerCity;
+@property (nonatomic, copy) NSString *consumerZip;
+@property (nonatomic, copy) NSString *consumerCountry;
 
 @property (nonatomic, copy) NSString *taxableAmount;
 @property (nonatomic, copy) NSString *taxExemptAmount;
 @property (nonatomic, copy) NSString *totalTaxAmount;
+@property (nonatomic, copy) NSString *productType;
+@property (nonatomic, copy) NSString *desc;
+@property (nonatomic, copy) NSString *sku;
 
 @property (nonatomic, copy) NSString *installmentId;
 @property (nonatomic, copy) NSString *installmentNumber;

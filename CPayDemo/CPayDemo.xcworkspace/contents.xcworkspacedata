@@ -5,9 +5,6 @@
       location = "group:CPaySPMDemo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CPaySPMGithubDemo.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:CPayManualDemo.xcodeproj">
    </FileRef>
    <FileRef
