@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPay'
-  s.version          = '2.6.3'
+  s.version          = '2.6.4'
   s.summary          = 'Online mobile SDK for iOS.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   DESC
 
   s.homepage         = 'https://github.com/Citcon/mobile_sdk_ios'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT' }
   s.author           = { 'yansheng.ao@citcon.cn' => 'yansheng.ao@citcon.cn' }
   s.source           = { :git => 'https://github.com/Citcon/mobile_sdk_ios.git', :tag => 'v' + s.version.to_s }
 
