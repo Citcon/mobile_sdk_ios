@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09AF8FD82A60656500421A02 /* CPay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09326ACA2A60638500D955B5 /* CPay.xcframework */; };
+		09AF8FD92A60656500421A02 /* CPay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09326ACA2A60638500D955B5 /* CPay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1943AB027F19A1B000B1DC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */; };
+		F1943AB627F19A1B000B1DC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1943AB527F19A1B000B1DC9 /* ViewController.m */; };
+		F1943AB927F19A1B000B1DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1943AB727F19A1B000B1DC9 /* Main.storyboard */; };
+		F1943ABB27F19A1C000B1DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1943ABA27F19A1C000B1DC9 /* Assets.xcassets */; };
+		F1943ABE27F19A1C000B1DC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1943ABC27F19A1C000B1DC9 /* LaunchScreen.storyboard */; };
+		F1943AC127F19A1C000B1DC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1943AC027F19A1C000B1DC9 /* main.m */; };
+		F1F02CF727F5821600FEB09D /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F02CF627F5821600FEB09D /* LoadingView.m */; };
+		F1F02CFA27F5827600FEB09D /* AppInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F02CF927F5827600FEB09D /* AppInstance.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F13BD03628AB724700944E16 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09AF8FD92A60656500421A02 /* CPay.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09326ACA2A60638500D955B5 /* CPay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CPay.xcframework; path = ../CPay.xcframework; sourceTree = "<group>"; };
+		F1943AAB27F19A1B000B1DC9 /* CPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1943AAE27F19A1B000B1DC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F1943AB427F19A1B000B1DC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F1943AB527F19A1B000B1DC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F1943AB827F19A1B000B1DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1943ABA27F19A1C000B1DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1943ABD27F19A1C000B1DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1943ABF27F19A1C000B1DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1943AC027F19A1C000B1DC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1943ACC27F19AC6000B1DC9 /* CPayDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CPayDemo.entitlements; sourceTree = "<group>"; };
+		F1F02CF527F5821600FEB09D /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		F1F02CF627F5821600FEB09D /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		F1F02CF827F5827600FEB09D /* AppInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInstance.h; sourceTree = "<group>"; };
+		F1F02CF927F5827600FEB09D /* AppInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInstance.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1943AA827F19A1B000B1DC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AF8FD82A60656500421A02 /* CPay.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09326AC92A60636500D955B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09326ACA2A60638500D955B5 /* CPay.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1943AA227F19A1B000B1DC9 = {
+			isa = PBXGroup;
+			children = (
+				F1943AAD27F19A1B000B1DC9 /* CPayDemo */,
+				09326AC92A60636500D955B5 /* Frameworks */,
+				F1943AAC27F19A1B000B1DC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1943AAC27F19A1B000B1DC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1943AAB27F19A1B000B1DC9 /* CPayDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1943AAD27F19A1B000B1DC9 /* CPayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1943ACC27F19AC6000B1DC9 /* CPayDemo.entitlements */,
+				F1943AAE27F19A1B000B1DC9 /* AppDelegate.h */,
+				F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */,
+				F1943AB427F19A1B000B1DC9 /* ViewController.h */,
+				F1943AB527F19A1B000B1DC9 /* ViewController.m */,
+				F1943AB727F19A1B000B1DC9 /* Main.storyboard */,
+				F1943ABA27F19A1C000B1DC9 /* Assets.xcassets */,
+				F1943ABC27F19A1C000B1DC9 /* LaunchScreen.storyboard */,
+				F1943ABF27F19A1C000B1DC9 /* Info.plist */,
+				F1943AC027F19A1C000B1DC9 /* main.m */,
+				F1F02CF527F5821600FEB09D /* LoadingView.h */,
+				F1F02CF627F5821600FEB09D /* LoadingView.m */,
+				F1F02CF827F5827600FEB09D /* AppInstance.h */,
+				F1F02CF927F5827600FEB09D /* AppInstance.m */,
+			);
+			path = CPayDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1943AAA27F19A1B000B1DC9 /* CPayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1943AC427F19A1C000B1DC9 /* Build configuration list for PBXNativeTarget "CPayDemo" */;
+			buildPhases = (
+				F1943AA727F19A1B000B1DC9 /* Sources */,
+				F1943AA827F19A1B000B1DC9 /* Frameworks */,
+				F1943AA927F19A1B000B1DC9 /* Resources */,
+				F13BD03628AB724700944E16 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPayDemo;
+			productName = CPayDemo;
+			productReference = F1943AAB27F19A1B000B1DC9 /* CPayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1943AA327F19A1B000B1DC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					F1943AAA27F19A1B000B1DC9 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = F1943AA627F19A1B000B1DC9 /* Build configuration list for PBXProject "CPayManualDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1943AA227F19A1B000B1DC9;
+			productRefGroup = F1943AAC27F19A1B000B1DC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1943AAA27F19A1B000B1DC9 /* CPayDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1943AA927F19A1B000B1DC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1943ABE27F19A1C000B1DC9 /* LaunchScreen.storyboard in Resources */,
+				F1943ABB27F19A1C000B1DC9 /* Assets.xcassets in Resources */,
+				F1943AB927F19A1B000B1DC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1943AA727F19A1B000B1DC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1943AB627F19A1B000B1DC9 /* ViewController.m in Sources */,
+				F1F02CF727F5821600FEB09D /* LoadingView.m in Sources */,
+				F1943AB027F19A1B000B1DC9 /* AppDelegate.m in Sources */,
+				F1943AC127F19A1C000B1DC9 /* main.m in Sources */,
+				F1F02CFA27F5827600FEB09D /* AppInstance.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1943AB727F19A1B000B1DC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1943AB827F19A1B000B1DC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1943ABC27F19A1C000B1DC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1943ABD27F19A1C000B1DC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1943AC227F19A1C000B1DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1943AC327F19A1C000B1DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1943AC527F19A1C000B1DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CPayDemo/CPayDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QR8NK5X24;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6QR8NK5X24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CPayDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citcon.citconpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DevOnlineSDKDemo;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = DevOnlineSDKDemo;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1943AC627F19A1C000B1DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CPayDemo/CPayDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6QR8NK5X24;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6QR8NK5X24;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CPayDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.citcon.citconpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DevOnlineSDKDemo;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = DevOnlineSDKDemo;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1943AA627F19A1B000B1DC9 /* Build configuration list for PBXProject "CPayManualDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1943AC227F19A1C000B1DC9 /* Debug */,
+				F1943AC327F19A1C000B1DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1943AC427F19A1C000B1DC9 /* Build configuration list for PBXNativeTarget "CPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1943AC527F19A1C000B1DC9 /* Debug */,
+				F1943AC627F19A1C000B1DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1943AA327F19A1B000B1DC9 /* Project object */;
+}

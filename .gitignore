@@ -1,0 +1,10 @@
+.DS_Store
+/.build
+/Packages
+DerivedData/
+.netrc
+
+**/xcshareddata/*
+**/xcuserdata/*
+**/Pods/**
+.swiftpm
