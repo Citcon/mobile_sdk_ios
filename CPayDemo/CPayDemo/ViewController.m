@@ -84,8 +84,8 @@
     
     [self generateRef];
 //    _txtCurrency.text = @"KRW";
-    _txtCurrency.text = @"GBP";
-    _txtCountry.text = @"KR";
+    _txtCurrency.text = @"USD";
+    _txtCountry.text = @"US";
 //    _txtAmount.text = @"100";
     _txtAmount.text = @"1";
 //    _txtVendor.text = @"card";
