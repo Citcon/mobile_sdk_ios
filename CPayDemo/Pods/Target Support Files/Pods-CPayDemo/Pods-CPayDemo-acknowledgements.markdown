@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## CPay
 
-Copyright (c) 2023 Citcon
+Copyright (c) 2024 Citcon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
