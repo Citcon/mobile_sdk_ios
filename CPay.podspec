@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPay'
-  s.version          = '2.6.4'
+  s.version          = '2.6.5'
   s.summary          = 'Online mobile SDK for iOS.'
 
 # This description is used to generate tags and improve search results.
