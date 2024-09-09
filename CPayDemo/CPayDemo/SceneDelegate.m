@@ -6,6 +6,7 @@
 //
 
 #import "SceneDelegate.h"
+#import <CPay/CPay.h>
 
 @interface SceneDelegate ()
 
@@ -53,5 +54,25 @@
     // to restore the scene back to its current state.
 }
 
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts {
+    NSLog(@"scene:openURLContexts");
+    if (@available(iOS 13.0, *)) {
+        for (UIOpenURLContext *context in URLContexts) {
+            NSLog(@"openURLContexts -> %@ host:%@ scheme:%@", context.URL, context.URL.host, context.URL.scheme);
+                
+            [CPayManager processOpenUrl:[UIApplication sharedApplication] url:context.URL standbyCallback:^(CPayOrderResult *result) {
+                
+            }];
+        }
+
+    } else {
+        // Fallback on earlier versions
+    }
+}
+
+- (void)scene:(UIScene *)scene continueUserActivity:(NSUserActivity *)userActivity {
+    NSLog(@"scene:continueUserActivity");
+    [CPayManager processUserActivity:userActivity];
+}
 
 @end

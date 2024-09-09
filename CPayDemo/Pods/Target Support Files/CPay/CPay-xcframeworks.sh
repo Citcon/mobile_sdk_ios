@@ -23,6 +23,18 @@ variant_for_slice()
   "CPay.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
+  "PayKitUI.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "PayKitUI.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
+  "PayKit.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "PayKit.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   esac
 }
 
@@ -33,6 +45,18 @@ archs_for_slice()
     echo "arm64"
     ;;
   "CPay.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "PayKitUI.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "PayKitUI.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "PayKit.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "PayKit.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   esac
@@ -117,5 +141,7 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../../CPay.xcframework" "CPay" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Core/CPay.xcframework" "CPay/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework" "CPay/Payment/CashApp/Button" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKit.xcframework" "CPay/Payment/CashApp/Core" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 

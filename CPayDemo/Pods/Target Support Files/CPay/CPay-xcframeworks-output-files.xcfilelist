@@ -1,1 +1,3 @@
-${PODS_XCFRAMEWORKS_BUILD_DIR}/CPay/CPay.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPay/Core/CPay.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPay/Payment/CashApp/Button/PayKitUI.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPay/Payment/CashApp/Core/PayKit.framework

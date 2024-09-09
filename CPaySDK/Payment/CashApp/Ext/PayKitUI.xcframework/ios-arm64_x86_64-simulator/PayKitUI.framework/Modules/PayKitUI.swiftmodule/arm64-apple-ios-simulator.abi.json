@@ -1,0 +1,2221 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayKitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayKitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayKitUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CashAppPayButton",
+        "printedName": "CashAppPayButton",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "size",
+            "printedName": "size",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SizingCategory",
+                "printedName": "PayKitUI.SizingCategory",
+                "usr": "s:8PayKitUI14SizingCategoryO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI07CashAppA6ButtonC4sizeAA14SizingCategoryOvp",
+            "mangledName": "$s8PayKitUI07CashAppA6ButtonC4sizeAA14SizingCategoryOvp",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SizingCategory",
+                    "printedName": "PayKitUI.SizingCategory",
+                    "usr": "s:8PayKitUI14SizingCategoryO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA6ButtonC4sizeAA14SizingCategoryOvg",
+                "mangledName": "$s8PayKitUI07CashAppA6ButtonC4sizeAA14SizingCategoryOvg",
+                "moduleName": "PayKitUI",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SizingCategory",
+                    "printedName": "PayKitUI.SizingCategory",
+                    "usr": "s:8PayKitUI14SizingCategoryO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA6ButtonC4sizeAA14SizingCategoryOvs",
+                "mangledName": "$s8PayKitUI07CashAppA6ButtonC4sizeAA14SizingCategoryOvs",
+                "moduleName": "PayKitUI",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA6ButtonC4sizeAA14SizingCategoryOvM",
+                "mangledName": "$s8PayKitUI07CashAppA6ButtonC4sizeAA14SizingCategoryOvM",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "intro_iOS": "13.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isEnabled",
+            "printedName": "isEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI07CashAppA6ButtonC9isEnabledSbvp",
+            "mangledName": "$s8PayKitUI07CashAppA6ButtonC9isEnabledSbvp",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA6ButtonC9isEnabledSbvg",
+                "mangledName": "$s8PayKitUI07CashAppA6ButtonC9isEnabledSbvg",
+                "moduleName": "PayKitUI",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA6ButtonC9isEnabledSbvs",
+                "mangledName": "$s8PayKitUI07CashAppA6ButtonC9isEnabledSbvs",
+                "moduleName": "PayKitUI",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA6ButtonC9isEnabledSbvM",
+                "mangledName": "$s8PayKitUI07CashAppA6ButtonC9isEnabledSbvM",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "intro_iOS": "13.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(size:onClickHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CashAppPayButton",
+                "printedName": "PayKitUI.CashAppPayButton",
+                "usr": "c:@M@PayKitUI@objc(cs)CashAppPayButton"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SizingCategory",
+                "printedName": "PayKitUI.SizingCategory",
+                "hasDefaultArg": true,
+                "usr": "s:8PayKitUI14SizingCategoryO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8PayKitUI07CashAppA6ButtonC4size14onClickHandlerAcA14SizingCategoryO_yyctcfc",
+            "mangledName": "$s8PayKitUI07CashAppA6ButtonC4size14onClickHandlerAcA14SizingCategoryO_yyctcfc",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CashAppPayButton",
+                "printedName": "PayKitUI.CashAppPayButton",
+                "usr": "c:@M@PayKitUI@objc(cs)CashAppPayButton"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayKitUI@objc(cs)CashAppPayButton(im)initWithFrame:",
+            "mangledName": "$s8PayKitUI07CashAppA6ButtonC5frameACSo6CGRectV_tcfc",
+            "moduleName": "PayKitUI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayKitUI@objc(cs)CashAppPayButton",
+        "mangledName": "$s8PayKitUI07CashAppA6ButtonC",
+        "moduleName": "PayKitUI",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayKitUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CashAppPayButtonView",
+        "printedName": "CashAppPayButtonView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "viewModel",
+            "printedName": "viewModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ViewModel",
+                "printedName": "PayKitUI.CashAppPayButtonView.ViewModel",
+                "usr": "s:8PayKitUI07CashAppA10ButtonViewV0G5ModelC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI07CashAppA10ButtonViewV9viewModelAC0gI0Cvp",
+            "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV9viewModelAC0gI0Cvp",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ViewModel",
+                    "printedName": "PayKitUI.CashAppPayButtonView.ViewModel",
+                    "usr": "s:8PayKitUI07CashAppA10ButtonViewV0G5ModelC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA10ButtonViewV9viewModelAC0gI0Cvg",
+                "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV9viewModelAC0gI0Cvg",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ViewModel",
+                    "printedName": "PayKitUI.CashAppPayButtonView.ViewModel",
+                    "usr": "s:8PayKitUI07CashAppA10ButtonViewV0G5ModelC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA10ButtonViewV9viewModelAC0gI0Cvs",
+                "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV9viewModelAC0gI0Cvs",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA10ButtonViewV9viewModelAC0gI0CvM",
+                "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV9viewModelAC0gI0CvM",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$viewModel",
+            "printedName": "$viewModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Wrapper",
+                "printedName": "SwiftUI.ObservedObject<PayKitUI.CashAppPayButtonView.ViewModel>.Wrapper",
+                "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI07CashAppA10ButtonViewV10$viewModel05SwiftC014ObservedObjectV7WrapperVyAC0gI0C_Gvp",
+            "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV10$viewModel05SwiftC014ObservedObjectV7WrapperVyAC0gI0C_Gvp",
+            "moduleName": "PayKitUI",
+            "implicit": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Wrapper",
+                    "printedName": "SwiftUI.ObservedObject<PayKitUI.CashAppPayButtonView.ViewModel>.Wrapper",
+                    "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA10ButtonViewV10$viewModel05SwiftC014ObservedObjectV7WrapperVyAC0gI0C_Gvg",
+                "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV10$viewModel05SwiftC014ObservedObjectV7WrapperVyAC0gI0C_Gvg",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(size:isEnabled:onClickHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CashAppPayButtonView",
+                "printedName": "PayKitUI.CashAppPayButtonView",
+                "usr": "s:8PayKitUI07CashAppA10ButtonViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SizingCategory",
+                "printedName": "PayKitUI.SizingCategory",
+                "hasDefaultArg": true,
+                "usr": "s:8PayKitUI14SizingCategoryO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8PayKitUI07CashAppA10ButtonViewV4size9isEnabled14onClickHandlerAcA14SizingCategoryO_Sbyyctcfc",
+            "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV4size9isEnabled14onClickHandlerAcA14SizingCategoryO_Sbyyctcfc",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI07CashAppA10ButtonViewV4bodyQrvp",
+            "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV4bodyQrvp",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI07CashAppA10ButtonViewV4bodyQrvg",
+                "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV4bodyQrvg",
+                "moduleName": "PayKitUI",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ViewModel",
+            "printedName": "ViewModel",
+            "declKind": "Class",
+            "usr": "s:8PayKitUI07CashAppA10ButtonViewV0G5ModelC",
+            "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV0G5ModelC",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "ObservableObject",
+                "printedName": "ObservableObject",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "ObjectWillChangePublisher",
+                    "printedName": "ObjectWillChangePublisher",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObservableObjectPublisher",
+                        "printedName": "Combine.ObservableObjectPublisher",
+                        "usr": "s:7Combine25ObservableObjectPublisherC"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:7Combine16ObservableObjectP",
+                "mangledName": "$s7Combine16ObservableObjectP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8PayKitUI07CashAppA10ButtonViewV",
+        "mangledName": "$s8PayKitUI07CashAppA10ButtonViewV",
+        "moduleName": "PayKitUI",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayKitUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CashAppPaymentMethod",
+        "printedName": "CashAppPaymentMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "size",
+            "printedName": "size",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SizingCategory",
+                "printedName": "PayKitUI.SizingCategory",
+                "usr": "s:8PayKitUI14SizingCategoryO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI20CashAppPaymentMethodC4sizeAA14SizingCategoryOvp",
+            "mangledName": "$s8PayKitUI20CashAppPaymentMethodC4sizeAA14SizingCategoryOvp",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SizingCategory",
+                    "printedName": "PayKitUI.SizingCategory",
+                    "usr": "s:8PayKitUI14SizingCategoryO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI20CashAppPaymentMethodC4sizeAA14SizingCategoryOvg",
+                "mangledName": "$s8PayKitUI20CashAppPaymentMethodC4sizeAA14SizingCategoryOvg",
+                "moduleName": "PayKitUI",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SizingCategory",
+                    "printedName": "PayKitUI.SizingCategory",
+                    "usr": "s:8PayKitUI14SizingCategoryO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI20CashAppPaymentMethodC4sizeAA14SizingCategoryOvs",
+                "mangledName": "$s8PayKitUI20CashAppPaymentMethodC4sizeAA14SizingCategoryOvs",
+                "moduleName": "PayKitUI",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI20CashAppPaymentMethodC4sizeAA14SizingCategoryOvM",
+                "mangledName": "$s8PayKitUI20CashAppPaymentMethodC4sizeAA14SizingCategoryOvM",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "intro_iOS": "13.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cashTag",
+            "printedName": "cashTag",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI20CashAppPaymentMethodC7cashTagSSvp",
+            "mangledName": "$s8PayKitUI20CashAppPaymentMethodC7cashTagSSvp",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI20CashAppPaymentMethodC7cashTagSSvg",
+                "mangledName": "$s8PayKitUI20CashAppPaymentMethodC7cashTagSSvg",
+                "moduleName": "PayKitUI",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI20CashAppPaymentMethodC7cashTagSSvs",
+                "mangledName": "$s8PayKitUI20CashAppPaymentMethodC7cashTagSSvs",
+                "moduleName": "PayKitUI",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI20CashAppPaymentMethodC7cashTagSSvM",
+                "mangledName": "$s8PayKitUI20CashAppPaymentMethodC7cashTagSSvM",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "intro_iOS": "13.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(size:cashTag:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CashAppPaymentMethod",
+                "printedName": "PayKitUI.CashAppPaymentMethod",
+                "usr": "c:@M@PayKitUI@objc(cs)CashAppPaymentMethod"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SizingCategory",
+                "printedName": "PayKitUI.SizingCategory",
+                "hasDefaultArg": true,
+                "usr": "s:8PayKitUI14SizingCategoryO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8PayKitUI20CashAppPaymentMethodC4size7cashTagAcA14SizingCategoryO_SStcfc",
+            "mangledName": "$s8PayKitUI20CashAppPaymentMethodC4size7cashTagAcA14SizingCategoryO_SStcfc",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setCashTagTextColor",
+            "printedName": "setCashTagTextColor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PayKitUI20CashAppPaymentMethodC03setD12TagTextColoryySo7UIColorCF",
+            "mangledName": "$s8PayKitUI20CashAppPaymentMethodC03setD12TagTextColoryySo7UIColorCF",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCashTagFont",
+            "printedName": "setCashTagFont(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PayKitUI20CashAppPaymentMethodC03setD7TagFontyySo6UIFontCF",
+            "mangledName": "$s8PayKitUI20CashAppPaymentMethodC03setD7TagFontyySo6UIFontCF",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CashAppPaymentMethod",
+                "printedName": "PayKitUI.CashAppPaymentMethod",
+                "usr": "c:@M@PayKitUI@objc(cs)CashAppPaymentMethod"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayKitUI@objc(cs)CashAppPaymentMethod(im)initWithFrame:",
+            "mangledName": "$s8PayKitUI20CashAppPaymentMethodC5frameACSo6CGRectV_tcfc",
+            "moduleName": "PayKitUI",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayKitUI@objc(cs)CashAppPaymentMethod",
+        "mangledName": "$s8PayKitUI20CashAppPaymentMethodC",
+        "moduleName": "PayKitUI",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "Available",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayKitUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayKitUI"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CashAppPaymentMethodView",
+        "printedName": "CashAppPaymentMethodView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "viewModel",
+            "printedName": "viewModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ViewModel",
+                "printedName": "PayKitUI.CashAppPaymentMethodView.ViewModel",
+                "usr": "s:8PayKitUI24CashAppPaymentMethodViewV0H5ModelC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI24CashAppPaymentMethodViewV9viewModelAC0hJ0Cvp",
+            "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV9viewModelAC0hJ0Cvp",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ViewModel",
+                    "printedName": "PayKitUI.CashAppPaymentMethodView.ViewModel",
+                    "usr": "s:8PayKitUI24CashAppPaymentMethodViewV0H5ModelC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI24CashAppPaymentMethodViewV9viewModelAC0hJ0Cvg",
+                "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV9viewModelAC0hJ0Cvg",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ViewModel",
+                    "printedName": "PayKitUI.CashAppPaymentMethodView.ViewModel",
+                    "usr": "s:8PayKitUI24CashAppPaymentMethodViewV0H5ModelC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI24CashAppPaymentMethodViewV9viewModelAC0hJ0Cvs",
+                "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV9viewModelAC0hJ0Cvs",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI24CashAppPaymentMethodViewV9viewModelAC0hJ0CvM",
+                "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV9viewModelAC0hJ0CvM",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$viewModel",
+            "printedName": "$viewModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Wrapper",
+                "printedName": "SwiftUI.ObservedObject<PayKitUI.CashAppPaymentMethodView.ViewModel>.Wrapper",
+                "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI24CashAppPaymentMethodViewV10$viewModel05SwiftC014ObservedObjectV7WrapperVyAC0hJ0C_Gvp",
+            "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV10$viewModel05SwiftC014ObservedObjectV7WrapperVyAC0hJ0C_Gvp",
+            "moduleName": "PayKitUI",
+            "implicit": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Wrapper",
+                    "printedName": "SwiftUI.ObservedObject<PayKitUI.CashAppPaymentMethodView.ViewModel>.Wrapper",
+                    "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI24CashAppPaymentMethodViewV10$viewModel05SwiftC014ObservedObjectV7WrapperVyAC0hJ0C_Gvg",
+                "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV10$viewModel05SwiftC014ObservedObjectV7WrapperVyAC0hJ0C_Gvg",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(size:cashTag:cashTagFont:cashTagTextColor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CashAppPaymentMethodView",
+                "printedName": "PayKitUI.CashAppPaymentMethodView",
+                "usr": "s:8PayKitUI24CashAppPaymentMethodViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SizingCategory",
+                "printedName": "PayKitUI.SizingCategory",
+                "hasDefaultArg": true,
+                "usr": "s:8PayKitUI14SizingCategoryO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Font",
+                "printedName": "SwiftUI.Font",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI4FontV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Color",
+                "printedName": "SwiftUI.Color",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI5ColorV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8PayKitUI24CashAppPaymentMethodViewV4size7cashTag0jK4Font0jK9TextColorAcA14SizingCategoryO_SS05SwiftC00L0VAJ0N0Vtcfc",
+            "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV4size7cashTag0jK4Font0jK9TextColorAcA14SizingCategoryO_SS05SwiftC00L0VAJ0N0Vtcfc",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI24CashAppPaymentMethodViewV4bodyQrvp",
+            "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV4bodyQrvp",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI24CashAppPaymentMethodViewV4bodyQrvg",
+                "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV4bodyQrvg",
+                "moduleName": "PayKitUI",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Constants",
+            "printedName": "Constants",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "cashTagFont",
+                "printedName": "cashTagFont",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Font",
+                    "printedName": "SwiftUI.Font",
+                    "usr": "s:7SwiftUI4FontV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8PayKitUI24CashAppPaymentMethodViewV9ConstantsO11cashTagFont05SwiftC00L0VvpZ",
+                "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV9ConstantsO11cashTagFont05SwiftC00L0VvpZ",
+                "moduleName": "PayKitUI",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Font",
+                        "printedName": "SwiftUI.Font",
+                        "usr": "s:7SwiftUI4FontV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8PayKitUI24CashAppPaymentMethodViewV9ConstantsO11cashTagFont05SwiftC00L0VvgZ",
+                    "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV9ConstantsO11cashTagFont05SwiftC00L0VvgZ",
+                    "moduleName": "PayKitUI",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cashTagTextColor",
+                "printedName": "cashTagTextColor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Color",
+                    "printedName": "SwiftUI.Color",
+                    "usr": "s:7SwiftUI5ColorV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8PayKitUI24CashAppPaymentMethodViewV9ConstantsO16cashTagTextColor05SwiftC00M0VvpZ",
+                "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV9ConstantsO16cashTagTextColor05SwiftC00M0VvpZ",
+                "moduleName": "PayKitUI",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Color",
+                        "printedName": "SwiftUI.Color",
+                        "usr": "s:7SwiftUI5ColorV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8PayKitUI24CashAppPaymentMethodViewV9ConstantsO16cashTagTextColor05SwiftC00M0VvgZ",
+                    "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV9ConstantsO16cashTagTextColor05SwiftC00M0VvgZ",
+                    "moduleName": "PayKitUI",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:8PayKitUI24CashAppPaymentMethodViewV9ConstantsO",
+            "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV9ConstantsO",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ViewModel",
+            "printedName": "ViewModel",
+            "declKind": "Class",
+            "usr": "s:8PayKitUI24CashAppPaymentMethodViewV0H5ModelC",
+            "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV0H5ModelC",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "hasMissingDesignatedInitializers": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "ObservableObject",
+                "printedName": "ObservableObject",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "ObjectWillChangePublisher",
+                    "printedName": "ObjectWillChangePublisher",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ObservableObjectPublisher",
+                        "printedName": "Combine.ObservableObjectPublisher",
+                        "usr": "s:7Combine25ObservableObjectPublisherC"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:7Combine16ObservableObjectP",
+                "mangledName": "$s7Combine16ObservableObjectP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8PayKitUI24CashAppPaymentMethodViewV",
+        "mangledName": "$s8PayKitUI24CashAppPaymentMethodViewV",
+        "moduleName": "PayKitUI",
+        "intro_iOS": "13.0",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayKitUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SizingCategory",
+        "printedName": "SizingCategory",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "small",
+            "printedName": "small",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayKitUI.SizingCategory.Type) -> PayKitUI.SizingCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SizingCategory",
+                    "printedName": "PayKitUI.SizingCategory",
+                    "usr": "s:8PayKitUI14SizingCategoryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayKitUI.SizingCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SizingCategory",
+                        "printedName": "PayKitUI.SizingCategory",
+                        "usr": "s:8PayKitUI14SizingCategoryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8PayKitUI14SizingCategoryO5smallyA2CmF",
+            "mangledName": "$s8PayKitUI14SizingCategoryO5smallyA2CmF",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "large",
+            "printedName": "large",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayKitUI.SizingCategory.Type) -> PayKitUI.SizingCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SizingCategory",
+                    "printedName": "PayKitUI.SizingCategory",
+                    "usr": "s:8PayKitUI14SizingCategoryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayKitUI.SizingCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SizingCategory",
+                        "printedName": "PayKitUI.SizingCategory",
+                        "usr": "s:8PayKitUI14SizingCategoryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8PayKitUI14SizingCategoryO5largeyA2CmF",
+            "mangledName": "$s8PayKitUI14SizingCategoryO5largeyA2CmF",
+            "moduleName": "PayKitUI",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SizingCategory",
+                "printedName": "PayKitUI.SizingCategory",
+                "usr": "s:8PayKitUI14SizingCategoryO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SizingCategory",
+                "printedName": "PayKitUI.SizingCategory",
+                "usr": "s:8PayKitUI14SizingCategoryO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PayKitUI14SizingCategoryO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8PayKitUI14SizingCategoryO2eeoiySbAC_ACtFZ",
+            "moduleName": "PayKitUI",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8PayKitUI14SizingCategoryO9hashValueSivp",
+            "mangledName": "$s8PayKitUI14SizingCategoryO9hashValueSivp",
+            "moduleName": "PayKitUI",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8PayKitUI14SizingCategoryO9hashValueSivg",
+                "mangledName": "$s8PayKitUI14SizingCategoryO9hashValueSivg",
+                "moduleName": "PayKitUI",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8PayKitUI14SizingCategoryO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8PayKitUI14SizingCategoryO4hash4intoys6HasherVz_tF",
+            "moduleName": "PayKitUI",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8PayKitUI14SizingCategoryO",
+        "mangledName": "$s8PayKitUI14SizingCategoryO",
+        "moduleName": "PayKitUI",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayKitUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayKitUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayKitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayKitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PayKitUI"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "PayKitUI"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 926,
+      "length": 19,
+      "value": "\"ButtonTextPrimary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 1005,
+      "length": 16,
+      "value": "\"SurfacePrimary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 1089,
+      "length": 24,
+      "value": "\"SurfacePrimaryDisabled\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 1175,
+      "length": 18,
+      "value": "\"SurfaceSecondary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 1250,
+      "length": 13,
+      "value": "\"TextPrimary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 1322,
+      "length": 15,
+      "value": "\"TextSecondary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 1394,
+      "length": 13,
+      "value": "\"TextTernary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 1490,
+      "length": 10,
+      "value": "\"DarkLogo\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 1555,
+      "length": 11,
+      "value": "\"LightLogo\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 2096,
+      "length": 43,
+      "value": "\"Unable to load color asset named \""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/Shared\/Generated\/Assets.swift",
+      "kind": "StringLiteral",
+      "offset": 2137,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/UIKit\/CashAppPayButton.swift",
+      "kind": "StringLiteral",
+      "offset": 650,
+      "length": 16,
+      "value": "\"PayKitUI.CashAppPayButton\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1213,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4242,
+      "length": 3,
+      "value": "150"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4289,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4334,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4384,
+      "length": 3,
+      "value": "185"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4434,
+      "length": 3,
+      "value": "122"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4486,
+      "length": 3,
+      "value": "210"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4537,
+      "length": 3,
+      "value": "145"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4595,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4651,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4699,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4747,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4794,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4845,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4898,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4950,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4990,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPayButtonView.swift",
+      "kind": "FloatLiteral",
+      "offset": 5038,
+      "length": 3,
+      "value": "0.4"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/UIKit\/CashAppPaymentMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 1652,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/UIKit\/CashAppPaymentMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 654,
+      "length": 20,
+      "value": "\"PayKitUI.CashAppPaymentMethod\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPaymentMethodView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4133,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPaymentMethodView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4262,
+      "length": 3,
+      "value": "127"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPaymentMethodView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4308,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPaymentMethodView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4354,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPaymentMethodView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4407,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPaymentMethodView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4457,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPaymentMethodView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4505,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPaymentMethodView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4551,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/upi_mobile_sdk_ios\/Frameworks\/CashAppExt\/Example\/Pods\/CashAppPayKitUI\/Sources\/PayKitUI\/SwiftUI\/CashAppPaymentMethodView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4603,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/Library\/Developer\/Xcode\/DerivedData\/CashappExt-fvtqpxvycvfxnbaaetvukdgffbov\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CashAppExt\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/CashAppPayKitUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 642,
+      "length": 19,
+      "value": "\"ButtonTextPrimary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/Library\/Developer\/Xcode\/DerivedData\/CashappExt-fvtqpxvycvfxnbaaetvukdgffbov\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CashAppExt\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/CashAppPayKitUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 799,
+      "length": 16,
+      "value": "\"SurfacePrimary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/Library\/Developer\/Xcode\/DerivedData\/CashappExt-fvtqpxvycvfxnbaaetvukdgffbov\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CashAppExt\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/CashAppPayKitUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 969,
+      "length": 24,
+      "value": "\"SurfacePrimaryDisabled\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/Library\/Developer\/Xcode\/DerivedData\/CashappExt-fvtqpxvycvfxnbaaetvukdgffbov\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CashAppExt\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/CashAppPayKitUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1135,
+      "length": 18,
+      "value": "\"SurfaceSecondary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/Library\/Developer\/Xcode\/DerivedData\/CashappExt-fvtqpxvycvfxnbaaetvukdgffbov\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CashAppExt\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/CashAppPayKitUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1285,
+      "length": 13,
+      "value": "\"TextPrimary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/Library\/Developer\/Xcode\/DerivedData\/CashappExt-fvtqpxvycvfxnbaaetvukdgffbov\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CashAppExt\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/CashAppPayKitUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1434,
+      "length": 15,
+      "value": "\"TextSecondary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/Library\/Developer\/Xcode\/DerivedData\/CashappExt-fvtqpxvycvfxnbaaetvukdgffbov\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CashAppExt\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/CashAppPayKitUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1581,
+      "length": 13,
+      "value": "\"TextTernary\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/Library\/Developer\/Xcode\/DerivedData\/CashappExt-fvtqpxvycvfxnbaaetvukdgffbov\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CashAppExt\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/CashAppPayKitUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1825,
+      "length": 10,
+      "value": "\"DarkLogo\""
+    },
+    {
+      "filePath": "\/Users\/yansheng.ao\/Library\/Developer\/Xcode\/DerivedData\/CashappExt-fvtqpxvycvfxnbaaetvukdgffbov\/Build\/Intermediates.noindex\/ArchiveIntermediates\/CashAppExt\/IntermediateBuildFilesPath\/Pods.build\/Release-iphonesimulator\/CashAppPayKitUI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1963,
+      "length": 11,
+      "value": "\"LightLogo\""
+    }
+  ]
+}

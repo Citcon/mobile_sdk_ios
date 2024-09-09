@@ -1,0 +1,758 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayKit
+import Foundation
+@_exported import PayKit
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers open class AnalyticsEvent {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CashAppPay {
+  public static let version: Swift.String
+  public static let RedirectNotification: Foundation.Notification.Name
+  convenience public init(clientID: Swift.String, endpoint: PayKit.CashAppPay.Endpoint = .production)
+  public enum Endpoint {
+    case production
+    case sandbox
+    case staging
+    public static func == (a: PayKit.CashAppPay.Endpoint, b: PayKit.CashAppPay.Endpoint) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  final public let endpoint: PayKit.CashAppPay.Endpoint
+  public func retrieveCustomerRequest(id: Swift.String, completion: @escaping (Swift.Result<PayKit.CustomerRequest, any Swift.Error>) -> Swift.Void)
+  public func createCustomerRequest(params: PayKit.CreateCustomerRequestParams)
+  public func updateCustomerRequest(_ request: PayKit.CustomerRequest, with params: PayKit.UpdateCustomerRequestParams)
+  public enum AuthorizationMethod {
+    case DEEPLINK
+    public static func == (a: PayKit.CashAppPay.AuthorizationMethod, b: PayKit.CashAppPay.AuthorizationMethod) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public func authorizeCustomerRequest(_ request: PayKit.CustomerRequest, method: PayKit.CashAppPay.AuthorizationMethod = .DEEPLINK)
+  @objc deinit
+}
+public enum CashAppPayState : Swift.Equatable {
+  case notStarted
+  case creatingCustomerRequest(PayKit.CreateCustomerRequestParams)
+  case updatingCustomerRequest(request: PayKit.CustomerRequest, params: PayKit.UpdateCustomerRequestParams)
+  case readyToAuthorize(PayKit.CustomerRequest)
+  case redirecting(PayKit.CustomerRequest)
+  case polling(PayKit.CustomerRequest)
+  case declined(PayKit.CustomerRequest)
+  case approved(request: PayKit.CustomerRequest, grants: [PayKit.CustomerRequest.Grant])
+  case refreshing(PayKit.CustomerRequest)
+  case apiError(PayKit.APIError)
+  case integrationError(PayKit.IntegrationError)
+  case networkError(PayKit.NetworkError)
+  case unexpectedError(PayKit.UnexpectedError)
+  public static func == (a: PayKit.CashAppPayState, b: PayKit.CashAppPayState) -> Swift.Bool
+}
+public protocol CashAppPayObserver : AnyObject {
+  func stateDidChange(to state: PayKit.CashAppPayState)
+}
+extension PayKit.CashAppPay {
+  public func addObserver(_ observer: any PayKit.CashAppPayObserver)
+  public func removeObserver(_ observer: any PayKit.CashAppPayObserver)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc open class CAPCashAppPayState : ObjectiveC.NSObject {
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class CAPCashAppPayStateNotStarted : PayKit.CAPCashAppPayState {
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateCreatingCustomerRequest : PayKit.CAPCashAppPayState {
+  @objc final public let params: PayKit.CAPCreateCustomerRequestParams
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateUpdatingCustomerRequest : PayKit.CAPCashAppPayState {
+  @objc final public let request: PayKit.CAPCustomerRequest
+  @objc final public let params: PayKit.CAPUpdateCustomerRequestParams
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateReadyToAuthorize : PayKit.CAPCashAppPayState {
+  @objc final public let request: PayKit.CAPCustomerRequest
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateRedirecting : PayKit.CAPCashAppPayState {
+  @objc final public let request: PayKit.CAPCustomerRequest
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStatePolling : PayKit.CAPCashAppPayState {
+  @objc final public let request: PayKit.CAPCustomerRequest
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateDeclined : PayKit.CAPCashAppPayState {
+  @objc final public let request: PayKit.CAPCustomerRequest
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateApproved : PayKit.CAPCashAppPayState {
+  @objc final public let request: PayKit.CAPCustomerRequest
+  @objc final public let grants: [PayKit.CAPCustomerRequestGrant]
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateRefreshing : PayKit.CAPCashAppPayState {
+  @objc final public let request: PayKit.CAPCustomerRequest
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateAPIError : PayKit.CAPCashAppPayState {
+  final public let apiError: PayKit.APIError
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateIntegrationError : PayKit.CAPCashAppPayState {
+  final public let integrationError: PayKit.IntegrationError
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateNetworkError : PayKit.CAPCashAppPayState {
+  @objc final public let networkError: Foundation.NSError
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCashAppPayStateUnexpectedError : PayKit.CAPCashAppPayState {
+  final public let unexpectedError: PayKit.UnexpectedError
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+public struct CreateCustomerRequestParams : Swift.Codable, Swift.Equatable {
+  public let actions: [PayKit.PaymentAction]
+  public let channel: PayKit.Channel
+  public let redirectURL: Foundation.URL
+  public let referenceID: Swift.String?
+  public let metadata: [Swift.String : Swift.String]?
+  public init(actions: [PayKit.PaymentAction], channel: PayKit.Channel = .IN_APP, redirectURL: Foundation.URL, referenceID: Swift.String?, metadata: [Swift.String : Swift.String]?)
+  public static func == (a: PayKit.CreateCustomerRequestParams, b: PayKit.CreateCustomerRequestParams) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UpdateCustomerRequestParams : Swift.Equatable, Swift.Decodable {
+  public let actions: [PayKit.PaymentAction]
+  public let referenceID: Swift.String?
+  public let metadata: [Swift.String : Swift.String]?
+  public init(actions: [PayKit.PaymentAction], referenceID: Swift.String?, metadata: [Swift.String : Swift.String]?)
+  public static func == (a: PayKit.UpdateCustomerRequestParams, b: PayKit.UpdateCustomerRequestParams) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension PayKit.UpdateCustomerRequestParams : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct CustomerRequest : Swift.Codable, Swift.Equatable {
+  public let id: Swift.String
+  public enum Status : Swift.String, Swift.Codable {
+    case PENDING
+    case PROCESSING
+    case APPROVED
+    case DECLINED
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let status: PayKit.CustomerRequest.Status
+  public let actions: [PayKit.PaymentAction]
+  public struct AuthFlowTriggers : Swift.Codable, Swift.Equatable {
+    public let qrCodeImageURL: Foundation.URL
+    public let qrCodeSVGURL: Foundation.URL
+    public let mobileURL: Foundation.URL
+    public let refreshesAt: Foundation.Date
+    public static func == (a: PayKit.CustomerRequest.AuthFlowTriggers, b: PayKit.CustomerRequest.AuthFlowTriggers) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public let authFlowTriggers: PayKit.CustomerRequest.AuthFlowTriggers?
+  public let redirectURL: Foundation.URL?
+  public let createdAt: Foundation.Date
+  public let updatedAt: Foundation.Date
+  public let expiresAt: Foundation.Date
+  public struct Origin : Swift.Codable, Swift.Equatable {
+    public enum `Type` : Swift.String, Swift.Codable {
+      case DIRECT
+      case REQUEST_INITIATOR
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public let type: PayKit.CustomerRequest.Origin.`Type`
+    public let id: Swift.String?
+    public static func == (a: PayKit.CustomerRequest.Origin, b: PayKit.CustomerRequest.Origin) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public let origin: PayKit.CustomerRequest.Origin?
+  public let channel: PayKit.Channel
+  public struct Grant : Swift.Codable, Swift.Equatable {
+    public let id: Swift.String
+    public let customerID: Swift.String
+    public let action: PayKit.PaymentAction
+    public enum Status : Swift.String, Swift.Codable, Swift.Equatable {
+      case ACTIVE
+      case EXPIRED
+      case CONSUMED
+      case REVOKED
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public let status: PayKit.CustomerRequest.Grant.Status
+    public enum GrantType : Swift.String, Swift.Codable, Swift.Equatable {
+      case ONE_TIME
+      case EXTENDED
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public let type: PayKit.CustomerRequest.Grant.GrantType
+    public let channel: PayKit.Channel
+    public let createdAt: Foundation.Date
+    public let updatedAt: Foundation.Date
+    public let expiresAt: Foundation.Date?
+    public static func == (a: PayKit.CustomerRequest.Grant, b: PayKit.CustomerRequest.Grant) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public let grants: [PayKit.CustomerRequest.Grant]?
+  public let referenceID: Swift.String?
+  public struct RequesterProfile : Swift.Codable, Swift.Equatable {
+    public let name: Swift.String
+    public let logoURL: Foundation.URL
+    public static func == (a: PayKit.CustomerRequest.RequesterProfile, b: PayKit.CustomerRequest.RequesterProfile) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public let requesterProfile: PayKit.CustomerRequest.RequesterProfile?
+  public struct CustomerProfile : Swift.Codable, Swift.Equatable {
+    public let id: Swift.String
+    public let cashtag: Swift.String
+    public static func == (a: PayKit.CustomerRequest.CustomerProfile, b: PayKit.CustomerRequest.CustomerProfile) -> Swift.Bool
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public let customerProfile: PayKit.CustomerRequest.CustomerProfile?
+  public let metadata: [Swift.String : Swift.String]?
+  public static func == (a: PayKit.CustomerRequest, b: PayKit.CustomerRequest) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PaymentAction : Swift.Equatable {
+  public let type: PayKit.PaymentType
+  public let scopeID: Swift.String
+  public let money: PayKit.Money?
+  public let accountReferenceID: Swift.String?
+  public static func oneTimePayment(scopeID: Swift.String, money: PayKit.Money?) -> PayKit.PaymentAction
+  public static func onFilePayment(scopeID: Swift.String, accountReferenceID: Swift.String?) -> PayKit.PaymentAction
+  public static func == (a: PayKit.PaymentAction, b: PayKit.PaymentAction) -> Swift.Bool
+}
+extension PayKit.PaymentAction : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension PayKit.PaymentAction : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum PaymentType : Swift.String, Swift.Codable, Swift.CaseIterable, Swift.Equatable {
+  case ONE_TIME_PAYMENT
+  case ON_FILE_PAYMENT
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PayKit.PaymentType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [PayKit.PaymentType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Money : Swift.Codable, Swift.Equatable {
+  public let amount: Swift.UInt
+  public let currency: PayKit.Currency
+  public init(amount: Swift.UInt, currency: PayKit.Currency)
+  public static func == (a: PayKit.Money, b: PayKit.Money) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum Currency : Swift.String, Swift.Codable, Swift.Equatable {
+  case USD
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum Channel : Swift.String, Swift.Codable, Swift.CaseIterable, Swift.Equatable {
+  case IN_APP
+  case IN_PERSON
+  case ONLINE
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [PayKit.Channel]
+  public typealias RawValue = Swift.String
+  public static var allCases: [PayKit.Channel] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension PayKit.CreateCustomerRequestParams : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension PayKit.UpdateCustomerRequestParams : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension PayKit.CustomerRequest : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension PayKit.PaymentAction : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCreateCustomerRequestParams : ObjectiveC.NSObject {
+  @objc final public var actions: [PayKit.CAPPaymentAction] {
+    @objc get
+  }
+  @objc final public var channel: Swift.String {
+    @objc get
+  }
+  @objc final public var redirectURL: Foundation.URL {
+    @objc get
+  }
+  @objc final public var referenceID: Swift.String? {
+    @objc get
+  }
+  @objc final public var metadata: [Swift.String : Swift.String]? {
+    @objc get
+  }
+  @objc public init(actions: [PayKit.CAPPaymentAction], channel: PayKit.CAPChannel, redirectURL: Foundation.URL, referenceID: Swift.String?, metadata: [Swift.String : Swift.String]?)
+  @objc public init(actions: [PayKit.CAPPaymentAction], redirectURL: Foundation.URL, referenceID: Swift.String?, metadata: [Swift.String : Swift.String]?)
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPUpdateCustomerRequestParams : ObjectiveC.NSObject {
+  @objc final public var actions: [PayKit.CAPPaymentAction] {
+    @objc get
+  }
+  @objc final public var referenceID: Swift.String? {
+    @objc get
+  }
+  @objc final public var metadata: [Swift.String : Swift.String]? {
+    @objc get
+  }
+  @objc public init(actions: [PayKit.CAPPaymentAction], referenceID: Swift.String?, metadata: [Swift.String : Swift.String]?)
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequest : ObjectiveC.NSObject {
+  @objc final public var id: Swift.String {
+    @objc get
+  }
+  @objc final public var status: Swift.String {
+    @objc get
+  }
+  @objc final public var actions: [PayKit.CAPPaymentAction] {
+    @objc get
+  }
+  @objc final public var authFlowTriggers: PayKit.CAPCustomerRequestAuthFlowTriggers? {
+    @objc get
+  }
+  @objc final public var redirectURL: Foundation.URL? {
+    @objc get
+  }
+  @objc final public var createdAt: Foundation.Date {
+    @objc get
+  }
+  @objc final public var updatedAt: Foundation.Date {
+    @objc get
+  }
+  @objc final public var expiresAt: Foundation.Date {
+    @objc get
+  }
+  @objc final public var origin: PayKit.CAPCustomerRequestOrigin? {
+    @objc get
+  }
+  @objc final public var channel: Swift.String {
+    @objc get
+  }
+  @objc final public var grants: [PayKit.CAPCustomerRequestGrant]? {
+    @objc get
+  }
+  @objc final public var referenceID: Swift.String? {
+    @objc get
+  }
+  @objc final public var requesterProfile: PayKit.CAPCustomerRequestRequesterProfile? {
+    @objc get
+  }
+  @objc final public var customerProfile: PayKit.CAPCustomerRequestCustomerProfile? {
+    @objc get
+  }
+  @objc final public var metadata: [Swift.String : Swift.String]? {
+    @objc get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequestGrant : ObjectiveC.NSObject {
+  @objc final public var id: Swift.String {
+    @objc get
+  }
+  @objc final public var customerID: Swift.String {
+    @objc get
+  }
+  @objc final public var action: PayKit.CAPPaymentAction {
+    @objc get
+  }
+  @objc final public var status: Swift.String {
+    @objc get
+  }
+  @objc final public var channel: Swift.String {
+    @objc get
+  }
+  @objc final public var createdAt: Foundation.Date {
+    @objc get
+  }
+  @objc final public var updatedAt: Foundation.Date {
+    @objc get
+  }
+  @objc final public var expiresAt: Foundation.Date? {
+    @objc get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequestCustomerProfile : ObjectiveC.NSObject {
+  @objc final public var id: Swift.String {
+    @objc get
+  }
+  @objc final public var cashtag: Swift.String {
+    @objc get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequestRequesterProfile : ObjectiveC.NSObject {
+  @objc final public var name: Swift.String {
+    @objc get
+  }
+  @objc final public var logoURL: Foundation.URL {
+    @objc get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequestOrigin : ObjectiveC.NSObject {
+  @objc final public var type: Swift.String {
+    @objc get
+  }
+  @objc final public var id: Swift.String? {
+    @objc get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPCustomerRequestAuthFlowTriggers : ObjectiveC.NSObject {
+  @objc final public var qrCodeImageURL: Foundation.URL {
+    @objc get
+  }
+  @objc final public var qrCodeSVGURL: Foundation.URL {
+    @objc get
+  }
+  @objc final public var mobileURL: Foundation.URL {
+    @objc get
+  }
+  @objc final public var refreshesAt: Foundation.Date {
+    @objc get
+  }
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPPaymentAction : ObjectiveC.NSObject {
+  @objc final public var type: Swift.String {
+    @objc get
+  }
+  @objc final public var scopeID: Swift.String {
+    @objc get
+  }
+  @objc final public var money: PayKit.CAPMoney? {
+    @objc get
+  }
+  @objc final public var accountReferenceID: Swift.String? {
+    @objc get
+  }
+  @objc public static func oneTimePayment(scopeID: Swift.String, money: PayKit.CAPMoney?) -> PayKit.CAPPaymentAction
+  @objc public static func onFilePayment(scopeID: Swift.String, accountReferenceID: Swift.String?) -> PayKit.CAPPaymentAction
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPMoney : ObjectiveC.NSObject {
+  @objc final public var amount: Swift.UInt {
+    @objc get
+  }
+  @objc final public var currency: PayKit.CAPCurrency {
+    @objc get
+  }
+  @objc public init(amount: Swift.UInt, currency: PayKit.CAPCurrency)
+  @objc override final public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+@objc public enum CAPCurrency : Swift.Int {
+  case USD
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum CAPChannel : Swift.Int {
+  case IN_APP
+  case IN_PERSON
+  case ONLINE
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct APIError : Swift.Error, Swift.Codable, Swift.Equatable {
+  public static func == (a: PayKit.APIError, b: PayKit.APIError) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct IntegrationError : Swift.Error, Swift.Codable, Swift.Equatable {
+  public static func == (a: PayKit.IntegrationError, b: PayKit.IntegrationError) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UnexpectedError : Swift.Error, Swift.Codable, Swift.Equatable {
+  public static func == (a: PayKit.UnexpectedError, b: PayKit.UnexpectedError) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum NetworkError : Swift.Error, Swift.Equatable {
+  case noResponse
+  case nilData(Foundation.HTTPURLResponse)
+  case invalidJSON(Foundation.Data)
+  case systemError(Foundation.NSError)
+  public static func == (a: PayKit.NetworkError, b: PayKit.NetworkError) -> Swift.Bool
+}
+public let CAPErrorDomain: Swift.String
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPApiError : Foundation.NSError {
+  @objc final public var category: PayKit.CAPApiErrorCategory {
+    @objc get
+  }
+  @objc override final public var code: Swift.Int {
+    @objc get
+  }
+  @objc final public var detail: Swift.String? {
+    @objc get
+  }
+  @objc final public var field: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum CAPApiErrorCategory : Swift.Int {
+  case API_ERROR
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum CAPApiErrorCode : Swift.Int {
+  case INTERNAL_SERVER_ERROR
+  case SERVICE_UNAVAILABLE
+  case GATEWAY_TIMEOUT
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPIntegrationError : Foundation.NSError {
+  @objc final public var category: PayKit.CAPIntegrationErrorCategory {
+    @objc get
+  }
+  @objc override final public var code: Swift.Int {
+    @objc get
+  }
+  @objc final public var detail: Swift.String? {
+    @objc get
+  }
+  @objc final public var field: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public enum CAPIntegrationErrorCategory : Swift.Int {
+  case AUTHENTICATION_ERROR
+  case BRAND_ERROR
+  case MERCHANT_ERROR
+  case INVALID_REQUEST_ERROR
+  case RATE_LIMIT_ERROR
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum CAPIntegrationErrorCode : Swift.Int {
+  case UNAUTHORIZED
+  case CLIENT_DISABLED
+  case FORBIDDEN
+  case VALUE_TOO_LONG
+  case VALUE_TOO_SHORT
+  case VALUE_EMPTY
+  case VALUE_REGEX_MISMATCH
+  case INVALID_URL
+  case VALUE_TOO_HIGH
+  case VALUE_TOO_LOW
+  case ARRAY_LENGTH_TOO_LONG
+  case ARRAY_LENGTH_TOO_SHORT
+  case INVALID_ARRAY_TYPE
+  case NOT_FOUND
+  case CONFLICT
+  case INVALID_STATE_TRANSITION
+  case CLIENT_NOT_FOUND
+  case RATE_LIMITED
+  case BRAND_NOT_FOUND
+  case MERCHANT_MISSING_ADDRESS_OR_SITE
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class CAPUnexpectedError : Foundation.NSError {
+  @objc final public var category: Swift.String {
+    @objc get
+  }
+  @objc final public var codeMessage: Swift.String {
+    @objc get
+  }
+  @objc final public var detail: Swift.String? {
+    @objc get
+  }
+  @objc final public var field: Swift.String? {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc final public class CAPNetworkErrorNoResponse : Foundation.NSError {
+  @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class CAPNetworkErrorNilData : Foundation.NSError {
+  @objc final public var response: Foundation.HTTPURLResponse
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class CAPNetworkErrorInvalidJSON : Foundation.NSError {
+  @objc final public var data: Foundation.Data
+  @objc deinit
+}
+@objc public protocol CAPCashAppPayObserver : ObjectiveC.NSObjectProtocol {
+  @objc func stateDidChange(to state: PayKit.CAPCashAppPayState)
+}
+@_hasMissingDesignatedInitializers @objc(CAPCashAppPay) final public class ObjCWrapper : ObjectiveC.NSObject {
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var RedirectNotification: Foundation.Notification.Name {
+    @objc get
+  }
+  @objc final public var endpoint: PayKit.CAPEndpoint {
+    @objc get
+  }
+  @objc convenience public init(clientID: Swift.String, endpoint: PayKit.CAPEndpoint = .production)
+  @objc final public func retrieveCustomerRequest(id: Swift.String, completion: @escaping (PayKit.CAPCustomerRequest?, Foundation.NSError?) -> Swift.Void)
+  @objc final public func createCustomerRequest(params: PayKit.CAPCreateCustomerRequestParams)
+  @objc final public func updateCustomerRequest(_ request: PayKit.CAPCustomerRequest, with params: PayKit.CAPUpdateCustomerRequestParams)
+  @objc final public func authorizeCustomerRequest(_ request: PayKit.CAPCustomerRequest)
+  @objc deinit
+}
+extension PayKit.ObjCWrapper {
+  @objc final public func addObserver(_ observer: any PayKit.CAPCashAppPayObserver)
+}
+extension PayKit.ObjCWrapper : PayKit.CashAppPayObserver {
+  final public func stateDidChange(to state: PayKit.CashAppPayState)
+}
+@objc public enum CAPEndpoint : Swift.Int {
+  case production
+  case sandbox
+  case staging
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension PayKit.CashAppPay.Endpoint : Swift.Equatable {}
+extension PayKit.CashAppPay.Endpoint : Swift.Hashable {}
+extension PayKit.CashAppPay.AuthorizationMethod : Swift.Equatable {}
+extension PayKit.CashAppPay.AuthorizationMethod : Swift.Hashable {}
+extension PayKit.CustomerRequest.Status : Swift.Equatable {}
+extension PayKit.CustomerRequest.Status : Swift.Hashable {}
+extension PayKit.CustomerRequest.Status : Swift.RawRepresentable {}
+extension PayKit.CustomerRequest.Origin.`Type` : Swift.Equatable {}
+extension PayKit.CustomerRequest.Origin.`Type` : Swift.Hashable {}
+extension PayKit.CustomerRequest.Origin.`Type` : Swift.RawRepresentable {}
+extension PayKit.CustomerRequest.Grant.Status : Swift.Hashable {}
+extension PayKit.CustomerRequest.Grant.Status : Swift.RawRepresentable {}
+extension PayKit.CustomerRequest.Grant.GrantType : Swift.Hashable {}
+extension PayKit.CustomerRequest.Grant.GrantType : Swift.RawRepresentable {}
+extension PayKit.PaymentType : Swift.Hashable {}
+extension PayKit.PaymentType : Swift.RawRepresentable {}
+extension PayKit.Currency : Swift.Hashable {}
+extension PayKit.Currency : Swift.RawRepresentable {}
+extension PayKit.Channel : Swift.Hashable {}
+extension PayKit.Channel : Swift.RawRepresentable {}
+extension PayKit.CAPCurrency : Swift.Equatable {}
+extension PayKit.CAPCurrency : Swift.Hashable {}
+extension PayKit.CAPCurrency : Swift.RawRepresentable {}
+extension PayKit.CAPChannel : Swift.Equatable {}
+extension PayKit.CAPChannel : Swift.Hashable {}
+extension PayKit.CAPChannel : Swift.RawRepresentable {}
+extension PayKit.CAPApiErrorCategory : Swift.Equatable {}
+extension PayKit.CAPApiErrorCategory : Swift.Hashable {}
+extension PayKit.CAPApiErrorCategory : Swift.RawRepresentable {}
+extension PayKit.CAPApiErrorCode : Swift.Equatable {}
+extension PayKit.CAPApiErrorCode : Swift.Hashable {}
+extension PayKit.CAPApiErrorCode : Swift.RawRepresentable {}
+extension PayKit.CAPIntegrationErrorCategory : Swift.Equatable {}
+extension PayKit.CAPIntegrationErrorCategory : Swift.Hashable {}
+extension PayKit.CAPIntegrationErrorCategory : Swift.RawRepresentable {}
+extension PayKit.CAPIntegrationErrorCode : Swift.Equatable {}
+extension PayKit.CAPIntegrationErrorCode : Swift.Hashable {}
+extension PayKit.CAPIntegrationErrorCode : Swift.RawRepresentable {}
+extension PayKit.CAPEndpoint : Swift.Equatable {}
+extension PayKit.CAPEndpoint : Swift.Hashable {}
+extension PayKit.CAPEndpoint : Swift.RawRepresentable {}

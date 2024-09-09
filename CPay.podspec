@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CPay'
-  s.version          = '2.6.5'
+  s.version          = '2.7.0'
   s.summary          = 'Online mobile SDK for iOS.'
 
 # This description is used to generate tags and improve search results.
@@ -44,11 +44,27 @@ Pod::Spec.new do |s|
 
   s.static_framework = false
   
-  s.platform         = :ios, "11.0"
+  s.platform         = :ios, "13.0"
   # s.compiler_flags   = "-Wall -Werror -Wextra"
   # s.swift_version    = "5.1"
-
-  s.vendored_frameworks = 'CPay.xcframework'
-
+  # s.vendored_frameworks = 'CPay.xcframework'
   
+  s.default_subspecs = ["Core", "Payment/CashApp/Core", "Payment/CashApp/Button"]
+
+  s.subspec 'Core' do |ss|
+    ss.vendored_frameworks = 'CPaySDK/Core/CPay.xcframework'
+  end
+
+  s.subspec 'Payment' do |ss|
+    ss.subspec 'CashApp' do |sss|
+      sss.subspec 'Core' do |ssss|
+        ssss.vendored_frameworks = ['CPaySDK/Payment/CashApp/Ext/PayKit.xcframework']
+      end
+      
+      sss.subspec 'Button' do |ssss|
+        ssss.vendored_frameworks = ['CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework']
+      end
+    end
+  end
+
 end

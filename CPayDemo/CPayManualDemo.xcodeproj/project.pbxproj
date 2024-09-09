@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A3558C2C89BF29007F1C49 /* PayKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A355882C89BF24007F1C49 /* PayKit.xcframework */; };
+		09A3558D2C89BF29007F1C49 /* PayKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09A355882C89BF24007F1C49 /* PayKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09A3558E2C89BF2A007F1C49 /* PayKitUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A355892C89BF24007F1C49 /* PayKitUI.xcframework */; };
+		09A3558F2C89BF2A007F1C49 /* PayKitUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09A355892C89BF24007F1C49 /* PayKitUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		09AF8FD82A60656500421A02 /* CPay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09326ACA2A60638500D955B5 /* CPay.xcframework */; };
 		09AF8FD92A60656500421A02 /* CPay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09326ACA2A60638500D955B5 /* CPay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F1943AB027F19A1B000B1DC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */; };
@@ -26,7 +30,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				09A3558F2C89BF2A007F1C49 /* PayKitUI.xcframework in Embed Frameworks */,
 				09AF8FD92A60656500421A02 /* CPay.xcframework in Embed Frameworks */,
+				09A3558D2C89BF29007F1C49 /* PayKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,7 +40,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		09326ACA2A60638500D955B5 /* CPay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CPay.xcframework; path = ../CPay.xcframework; sourceTree = "<group>"; };
+		09326ACA2A60638500D955B5 /* CPay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CPay.xcframework; path = ../CPaySDK/Core/CPay.xcframework; sourceTree = "<group>"; };
+		09A355882C89BF24007F1C49 /* PayKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PayKit.xcframework; path = ../CPaySDK/Payment/CashApp/Ext/PayKit.xcframework; sourceTree = "<group>"; };
+		09A355892C89BF24007F1C49 /* PayKitUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PayKitUI.xcframework; path = ../CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework; sourceTree = "<group>"; };
+		09A355902C89BF58007F1C49 /* TokenHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokenHeader.h; sourceTree = SOURCE_ROOT; };
 		F1943AAB27F19A1B000B1DC9 /* CPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1943AAE27F19A1B000B1DC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,7 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A3558E2C89BF2A007F1C49 /* PayKitUI.xcframework in Frameworks */,
 				09AF8FD82A60656500421A02 /* CPay.xcframework in Frameworks */,
+				09A3558C2C89BF29007F1C49 /* PayKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +78,8 @@
 		09326AC92A60636500D955B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09A355882C89BF24007F1C49 /* PayKit.xcframework */,
+				09A355892C89BF24007F1C49 /* PayKitUI.xcframework */,
 				09326ACA2A60638500D955B5 /* CPay.xcframework */,
 			);
 			name = Frameworks;
@@ -92,6 +105,7 @@
 		F1943AAD27F19A1B000B1DC9 /* CPayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				09A355902C89BF58007F1C49 /* TokenHeader.h */,
 				F1943ACC27F19AC6000B1DC9 /* CPayDemo.entitlements */,
 				F1943AAE27F19A1B000B1DC9 /* AppDelegate.h */,
 				F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */,
@@ -338,7 +352,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,7 +383,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

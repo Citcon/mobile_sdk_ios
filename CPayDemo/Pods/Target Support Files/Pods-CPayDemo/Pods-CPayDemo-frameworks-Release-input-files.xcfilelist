@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-CPayDemo/Pods-CPayDemo-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/CPay/CPay.framework/CPay
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPay/Core/CPay.framework/CPay
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPay/Payment/CashApp/Button/PayKitUI.framework/PayKitUI
+${PODS_XCFRAMEWORKS_BUILD_DIR}/CPay/Payment/CashApp/Core/PayKit.framework/PayKit
