@@ -1,0 +1,11 @@
+framework module CashAppExt {
+  umbrella header "CashAppExt-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module CashAppExt.Swift {
+  header "CashAppExt-Swift.h"
+  requires objc
+}

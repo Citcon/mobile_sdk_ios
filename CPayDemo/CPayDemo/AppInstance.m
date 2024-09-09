@@ -18,7 +18,7 @@
 
 + (NSArray *)countries {
     return @[
-        @"US", @"KR", @"JP", @"CN", @"HK", @"CA", @"NZ", @"AU"
+        @"US", @"KR", @"JP", @"CN", @"HK", @"CA", @"NZ", @"AU", @"PH"
     ];
 }
 
@@ -27,13 +27,14 @@
         @"wechatpay", @"wechatpay_h5", @"alipay", @"upop", @"alipay_hk", @"kakaopay",
         @"gcash", @"dana", @"truemoney", @"bkash", @"easypaisa", @"cc", @"jkopay",
         @"card", @"payco", @"naverpay", @"banktransfer", @"linepay", @"paypay",
-        @"rakutenpay", @"toss", @"lpay", @"lgpay", @"samsungpay"
+        @"rakutenpay", @"toss", @"lpay", @"lgpay", @"samsungpay", @"ubp", @"bpi",
+        @"shopeepay", @"paymaya", @"grabpay", @"billease", @"cashalo", @"cashapppay"
     ];
 }
 
 + (NSArray *)envs {
     return @[
-        @"DEV", @"QA", @"PROD", @"UAT"
+        @"DEV", @"QA", @"UAT", @"PROD"
     ];
 }
 

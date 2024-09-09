@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		09A355912C89BF82007F1C49 /* TokenHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TokenHeader.h; sourceTree = SOURCE_ROOT; };
 		53CEA805F89C024768D134A0 /* Pods-CPayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPayDemo.debug.xcconfig"; path = "Target Support Files/Pods-CPayDemo/Pods-CPayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7804DBA1F4BF87B6953CAC0E /* Pods-CPayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPayDemo.release.xcconfig"; path = "Target Support Files/Pods-CPayDemo/Pods-CPayDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DAC834DBD9012AA00E355B31 /* Pods_CPayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CPayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +103,7 @@
 		F1943AAD27F19A1B000B1DC9 /* CPayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				09A355912C89BF82007F1C49 /* TokenHeader.h */,
 				F1943ACC27F19AC6000B1DC9 /* CPayDemo.entitlements */,
 				F1943AAE27F19A1B000B1DC9 /* AppDelegate.h */,
 				F1943AAF27F19A1B000B1DC9 /* AppDelegate.m */,
@@ -393,7 +395,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,7 +427,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,51 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 effective-4.1.50 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CashAppExt
+@_exported import CashAppExt
+import PayKit
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class CashAppButtonBuilder : ObjectiveC.NSObject {
+  @objc public static func buildPaymentButton(size: Swift.String? = "large", action: @escaping () -> Swift.Void) -> UIKit.UIView
+  @objc public static func buildPaymentMethod(size: Swift.String? = "large", cashTag: Swift.String = "", cashTagColor: UIKit.UIColor?, cashTagFont: UIKit.UIFont?) -> UIKit.UIView
+  @objc public static func hasImported() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum CashAppStatus : Swift.Int {
+  case Start = 1, Approved, Declined, Error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class CashAppResult : ObjectiveC.NSObject {
+  @objc public var env: Swift.Int
+  @objc public var clientId: Swift.String?
+  @objc public var orderId: Swift.String?
+  @objc public var status: Swift.Int
+  @objc public var grand_id: Swift.String?
+  @objc public var expiry: Swift.String?
+  @objc public var consumer_id: Swift.String?
+  @objc public var error: Foundation.NSError?
+  @objc deinit
+}
+public typealias CashAppCallback = (CashAppExt.CashAppResult) -> Swift.Void
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class CashAppService : ObjectiveC.NSObject {
+  @objc deinit
+  public func willDestroy()
+  @objc public func payOrderOneTime(orderId: Swift.String, scopeId: Swift.String, amount: Swift.UInt, redirect: Swift.String, callback: @escaping CashAppExt.CashAppCallback)
+  @objc public static func initSDK(clientId: Swift.String, env: Swift.Int = 0) -> Self
+  @objc public static func payOrder(orderId: Swift.String, scopeId: Swift.String, amount: Swift.UInt, redirect: Swift.String, callback: @escaping CashAppExt.CashAppCallback)
+  @objc public static func hasImported() -> Swift.Bool
+  @objc public static func destroy()
+}
+extension CashAppExt.CashAppService : PayKit.CashAppPayObserver {
+  public func stateDidChange(to state: PayKit.CashAppPayState)
+}
+extension CashAppExt.CashAppStatus : Swift.Equatable {}
+extension CashAppExt.CashAppStatus : Swift.Hashable {}
+extension CashAppExt.CashAppStatus : Swift.RawRepresentable {}

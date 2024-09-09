@@ -1,0 +1,11 @@
+framework module CPay {
+  umbrella header "CPay.h"
+  export *
+
+  module * { export * }
+}
+
+module CPay.Swift {
+  header "CPay-Swift.h"
+  requires objc
+}
