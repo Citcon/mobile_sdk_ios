@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/CPay/CPay-xcframeworks.sh
-${PODS_ROOT}/../../CPay.xcframework
+${PODS_ROOT}/../../CPaySDK/Core/CPay.xcframework
+${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework
+${PODS_ROOT}/../../CPaySDK/Payment/CashApp/Ext/PayKit.xcframework

@@ -9,6 +9,7 @@
 #import "LoadingView.h"
 #import "AppInstance.h"
 #import <CPay/CPay.h>
+#import "TokenHeader.h"
 
 @interface ViewController ()
 
@@ -51,6 +52,12 @@
 @property (strong, nonatomic) NSArray *pickerData;
 
 @property (strong, nonatomic) NSString *transId;
+@property (weak, nonatomic) IBOutlet UITextField *sourceField;
+@property (weak, nonatomic) IBOutlet UITextField *noteField;
+@property (weak, nonatomic) IBOutlet UISwitch *autoCaptureSwitcher;
+@property (weak, nonatomic) IBOutlet UIButton *chargeBtn;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -63,6 +70,10 @@
     [self initUI];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onResp:) name:kOrderPaymentFinishedNotification object:nil];
+    
+    NSLog(@"SDK Version: %@", [CPayManager getVersion]);
+
+    NSLog(@"yunshanfu install: %d",[CPayManager isUnionPayInstalled]);
 }
 
 - (void)initUI {
@@ -75,12 +86,18 @@
     [self addGesture:@selector(vendorGesture) txtField:_txtVendor];
     [self addGesture:@selector(countryGesture) txtField:_txtCountry];
     [self addGesture:@selector(envGesture) txtField:_txtEnv];
+    
+    [self cashAppButton];
+    
+    
+    
 }
 
 - (void)initOrderForm {
     _swAcceleration.on = NO;
     _swQueryByRef.on = NO;
     _swInstallments.on = NO;
+    _autoCaptureSwitcher.on = TRUE;
     
     [self generateRef];
 //    _txtCurrency.text = @"KRW";
@@ -89,28 +106,44 @@
 //    _txtAmount.text = @"100";
     _txtAmount.text = @"1";
 //    _txtVendor.text = @"card";
-    _txtVendor.text = @"wechatpay";
-    _txtSubject.text = @"subject";
-    _txtBody.text = @"body";
+    _txtVendor.text = @"alipay";
+    _txtVendor.text = @"cashapppay";
+
+//    _txtSubject.text = @"subject";
+//    _txtBody.text = @"body";
     _txtIPN.text = @"https://ipn-receive.qa01.citconpay.com/notify";
+    
     _txtCallbackUrl.text = @"com.citcon.citconpay://";
     _txtCancelUrl.text = @"com.citcon.citconpay://";
     _txtFailUrl.text = @"com.citcon.citconpay://";
+    
+//    _txtCallbackUrl.text = @"https://success";
+//    _txtCancelUrl.text = @"https://cancel";
+//    _txtFailUrl.text = @"https://fail";
+//    
+    
+    
     _txtScheme.text = @"com.citcon.citconpay";
+    
     _txtUniversalLink.text = @"https://dev.citconpay.com/cpaydemo";
-    _txtFirstName.text = @"John";
-    _txtLastName.text = @"Doe";
-    _txtPhone.text = @"6145675309";
-    _txtEmail.text = @"sun.xiufang@citcon.cn";
-    _txtConsumerRef.text = @"consumer-reference-000";
-    _txtTaxableAmount.text = @"0";
-    _txtTaxExemptAmount.text = @"0";
-    _txtTotalTaxAmount.text = @"0";
-    _txtExtraKey.text = @"extra key";
-    _txtExtraValue.text = @"extra value";
-//    _txtToken.text = @"DLFNLTHM5W4CXSHNE8K4N8WLAXVIFIUJ";
-    _txtToken.text = @"292DDDF4D30545EE81499C12C2A9F199";
-    _txtEnv.text = @"PROD";
+    _txtFirstName.text = @"Liu";
+    _txtLastName.text = @"Diao";
+    _txtPhone.text = @"18899000091";
+    _txtEmail.text = @"liu.diao@citcon.cn";
+//    _txtConsumerRef.text = @"consumer-reference-000";
+//    _txtTaxableAmount.text = @"0";
+//    _txtTaxExemptAmount.text = @"0";
+//    _txtTotalTaxAmount.text = @"0";
+//    _txtExtraKey.text = @"extra key";
+//    _txtExtraValue.text = @"extra value";
+
+    _sourceField.text = @"app_h5";
+    
+    _txtToken.text = SDK_TOKEN;
+    
+    _txtEnv.text = @"UAT";
+    
+
 }
 
 - (void)initTouch {
@@ -141,6 +174,7 @@
         return;
     }
 //    [self generateRef];
+    
     [CPayManager setupTokenKey:token];
     [CPayManager setupMode:[AppInstance modeby:_txtEnv.text]];
 }
@@ -160,24 +194,34 @@
     order.body = _txtBody.text;
     order.allowDuplicate = _swDuplicate.isOn;
     order.country = _txtCountry.text;
-    order.phone = _txtPhone.text;
-    order.firstName = _txtFirstName.text;
-    order.lastName = _txtLastName.text;
-    order.email = _txtEmail.text;
-    order.consumerReference = _txtConsumerRef.text;
-    order.taxableAmount = _txtTaxableAmount.text;
-    order.taxExemptAmount = _txtTaxExemptAmount.text;
-    order.totalTaxAmount = _txtTotalTaxAmount.text;
+    
+    
+    if (![_txtVendor.text isEqualToString:@"cashapppay"]) {
+        order.phone = _txtPhone.text;
+        order.firstName = _txtFirstName.text;
+        order.lastName = _txtLastName.text;
+        order.email = _txtEmail.text;
+        order.consumerReference = _txtConsumerRef.text;
+        order.taxableAmount = _txtTaxableAmount.text;
+        order.taxExemptAmount = _txtTaxExemptAmount.text;
+        order.totalTaxAmount = _txtTotalTaxAmount.text;
+    }
+    
+    
     order.isAccelerateCNPay = _swAcceleration.isOn;
     order.controller = self;
     order.unionPayMode = CPayUnionDevMode;
     order.referenceId = _txtRef.text;
     
+    order.source = _sourceField.text;
+    order.note = _noteField.text;
+    order.autoCapture = _autoCaptureSwitcher.isOn;
+    
     if (_swInstallments.isOn) {
         order.installmentId = _txtInstallments.text;
     }
     
-    order.cashReceiptType = @"income_deduction";
+//    order.cashReceiptType = @"income_deduction";
     
     return order;
 }
@@ -216,21 +260,33 @@
     [str appendFormat:@"    vendor: %@\n", result.order.vendor];
     [str appendFormat:@"    txn id: %@\n", result.order.transactionId];
     [str appendFormat:@"    ref id: %@\n", result.order.referenceId];
-    [str appendFormat:@"    currency: %@ amount: %@\n", result.order.currency, result.order.amount];
+    [str appendFormat:@"    currency: %@ \n    amount: %@\n", result.order.currency, result.order.amount];
     
-    self.lblSyncResult.text = str;
+    
+    [self updateResult:self.lblSyncResult text:[NSString stringWithFormat:@"%@", str]];
+    
+}
+
+- (CGFloat)getLabelHeight:(UILabel *)label {
+    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+    [style setLineBreakMode:label.lineBreakMode];
+    [style setAlignment:NSTextAlignmentLeft];
+    NSDictionary *dic = @{NSFontAttributeName :label.font, NSParagraphStyleAttributeName : style};
+    CGSize size = [label.text boundingRectWithSize:CGSizeMake(label.frame.size.width, MAXFLOAT) options:(NSStringDrawingUsesLineFragmentOrigin) attributes:dic context:nil].size;
+    return size.height;
 }
 
 - (void)showCheckResult:(CPayCheckResult *)result {
     NSMutableString *str = [NSMutableString new];
-    [str appendFormat:@"    status: %@\n", result.status];
+    [str appendFormat:@"\n    status: %@\n", result.status];
     [str appendFormat:@"    type: %@\n", result.type];
     [str appendFormat:@"    txn id: %@\n", result.transactionId];
     [str appendFormat:@"    ref id: %@\n", result.referenceId];
-    [str appendFormat:@"    currency: %@ amount: %@\n", result.currency, result.amount];
-    [str appendFormat:@"    refunded amount: %@ time: %@", result.refunded_amount, result.time];
+    [str appendFormat:@"    currency: %@ \n    amount: %@\n", result.currency, result.amount];
+    [str appendFormat:@"    refunded amount: %@ \n    time: %@", result.refunded_amount, result.time];
     
-    self.lblAsyncResult.text = str;
+    [self updateResult:self.lblAsyncResult text:[NSString stringWithFormat:@"%@", str]];
+
 }
 
 - (void)resetResult {
@@ -310,12 +366,15 @@
 }
 
 - (IBAction)onCharge:(id)sender {
+    [self generateRef];
+
+    
     [LoadingView show:self];
     [self setEnv];
     [self resetResult];
     [CPayManager requestOrder:[self createOrder] completion:^(CPayOrderResult *result) {
         [LoadingView dismiss];
-        NSLog(@"on callback: code(%ld) result:(%@) message:(%@)", (long)result.resultStatus, result.result, result.message);
+        NSLog(@"on callback: code(%@) result:(%@) message:(%@)", @(result.resultStatus), result.result, result.message);
         self.transId = [result.order.transactionId mutableCopy];
         [self showResult:result];
     }];
@@ -355,6 +414,80 @@
     CPayCheckResult *result = notification.object;
     NSLog(@"on notify: status(%@)", result.status);
     [self showResult:result];
+}
+
+- (void)updateResult:(UILabel *)label text:(NSString *)text {
+    label.text = text;
+    return;
+    
+    CGFloat height = [self getLabelHeight:label];
+    //    label.translatesAutoresizingMaskIntoConstraints = true;
+    //    label.frame = CGRectMake(label.frame.origin.x, label.frame.origin.y, label.frame.size.width, height);
+
+//    [label.heightAnchor constraintEqualToConstant:height].active = YES;
+//    [label setNeedsLayout];
+//    [label layoutIfNeeded];
+    
+    for (NSLayoutConstraint *constraint in label.constraints) {
+        if (constraint.firstAttribute == NSLayoutAttributeHeight) {
+            // remove auto generated layout height constraint
+            if ([constraint isKindOfClass:NSClassFromString(@"NSContentSizeLayoutConstraint")]) {
+                [label removeConstraint:constraint];
+                continue;
+            }
+            
+            // update label height
+            constraint.constant = height;
+        }
+    }
+    
+//    NSLog(@"All Constraints: %@", label.constraints);
+    
+    
+    [self.view layoutIfNeeded];
+
+
+}
+
+
+- (void)cashAppButton {
+        {
+            UIView *button =
+            [CPayStyleManager buildCashAppPaymentButtonWithSize:@"large" action:^{
+                [self buttonTapped];
+            }];
+            
+            if (button) {
+                [self.scrollView addSubview:button];
+                
+                [NSLayoutConstraint activateConstraints:@[
+                    [button.bottomAnchor constraintEqualToAnchor:self.chargeBtn.bottomAnchor constant:10 + 70],
+                    [button.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor]
+                ]];
+            }
+            
+        }
+        
+        {
+            UIView *button =
+            [CPayStyleManager buildCashAppPaymentMethodWithSize:@"large" cashTag:@"$USD" cashTagColor:[UIColor redColor] cashTagFont: [UIFont systemFontOfSize:10]];
+            
+            if (button) {
+                [self.scrollView addSubview:button];
+                
+                [NSLayoutConstraint activateConstraints:@[
+                    [button.bottomAnchor constraintEqualToAnchor:self.chargeBtn.bottomAnchor constant:10 + 110],
+                    [button.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor]
+                ]];
+                
+            }
+        }
+        
+}
+
+
+- (void)buttonTapped {
+    [self onCharge:nil];
 }
 
 

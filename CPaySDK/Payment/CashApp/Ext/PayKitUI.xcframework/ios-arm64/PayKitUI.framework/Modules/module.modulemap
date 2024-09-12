@@ -1,0 +1,11 @@
+framework module PayKitUI {
+  umbrella header "CashAppPayKitUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module PayKitUI.Swift {
+  header "PayKitUI-Swift.h"
+  requires objc
+}
