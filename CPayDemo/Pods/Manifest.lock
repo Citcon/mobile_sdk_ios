@@ -1,11 +1,11 @@
 PODS:
-  - CPay (2.7.0):
-    - CPay/Core (= 2.7.0)
-    - CPay/Payment/CashApp/Button (= 2.7.0)
-    - CPay/Payment/CashApp/Core (= 2.7.0)
-  - CPay/Core (2.7.0)
-  - CPay/Payment/CashApp/Button (2.7.0)
-  - CPay/Payment/CashApp/Core (2.7.0)
+  - CPay (2.7.1):
+    - CPay/Core (= 2.7.1)
+    - CPay/Payment/CashApp/Button (= 2.7.1)
+    - CPay/Payment/CashApp/Core (= 2.7.1)
+  - CPay/Core (2.7.1)
+  - CPay/Payment/CashApp/Button (2.7.1)
+  - CPay/Payment/CashApp/Core (2.7.1)
 
 DEPENDENCIES:
   - CPay (from `../`)
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CPay: a442bdfba75c6d8a2dc8abbd1d17da046fc6e7a8
+  CPay: d4ac2c5f21f46550dd40c988ca8353f82fc92083
 
 PODFILE CHECKSUM: 687ac69b0f43e46181472ad3972d5126994faa72
 
