@@ -19,7 +19,10 @@
         "name": "CashAppExt",
         "printedName": "CashAppExt",
         "declKind": "Import",
-        "moduleName": "CPay"
+        "moduleName": "CPay",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -273,23 +276,23 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/citcon_mobile_sdk_ios\/Frameworks\/CPay\/CPay\/UI\/CPayStyleManager.swift",
+      "filePath": "\/Users\/yansheng.ao\/Workspace\/citcon_mobile_sdk_ios-2.7.1\/Frameworks\/CPay\/CPay\/UI\/CPayStyleManager.swift",
       "kind": "StringLiteral",
-      "offset": 411,
+      "offset": 432,
       "length": 7,
       "value": "\"large\""
     },
     {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/citcon_mobile_sdk_ios\/Frameworks\/CPay\/CPay\/UI\/CPayStyleManager.swift",
+      "filePath": "\/Users\/yansheng.ao\/Workspace\/citcon_mobile_sdk_ios-2.7.1\/Frameworks\/CPay\/CPay\/UI\/CPayStyleManager.swift",
       "kind": "StringLiteral",
-      "offset": 984,
+      "offset": 1005,
       "length": 7,
       "value": "\"large\""
     },
     {
-      "filePath": "\/Users\/yansheng.ao\/workspace\/citcon-projects\/citcon-mobile\/citcon_mobile_sdk_ios\/Frameworks\/CPay\/CPay\/UI\/CPayStyleManager.swift",
+      "filePath": "\/Users\/yansheng.ao\/Workspace\/citcon_mobile_sdk_ios-2.7.1\/Frameworks\/CPay\/CPay\/UI\/CPayStyleManager.swift",
       "kind": "StringLiteral",
-      "offset": 1011,
+      "offset": 1032,
       "length": 2,
       "value": "\"\""
     }
