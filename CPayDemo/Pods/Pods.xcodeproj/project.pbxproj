@@ -16,6 +16,7 @@
 			dependencies = (
 			);
 			name = CPay;
+			productName = CPay;
 		};
 /* End PBXAggregateTarget section */
 
@@ -38,19 +39,19 @@
 /* Begin PBXFileReference section */
 		054F0F712F13F2A6C08239A4ED2EA323 /* Pods-CPayDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CPayDemo.modulemap"; sourceTree = "<group>"; };
 		448241A6E54789EC325C4894400EEB91 /* CPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPay.debug.xcconfig; sourceTree = "<group>"; };
-		6D308DE7FFB23E2962E32EC684632F1F /* PayKitUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PayKitUI.xcframework; path = CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework; sourceTree = "<group>"; };
+		6D308DE7FFB23E2962E32EC684632F1F /* PayKitUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = PayKitUI.xcframework; path = CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8CA629D7200ABF5DD3CE162DAA502386 /* Pods-CPayDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPayDemo-Info.plist"; sourceTree = "<group>"; };
-		8DA59962115E7646CD8DDB5D0D3A66D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		8EAF1746A58EF973E17623CA2C3681D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9895F7481E9AE7F71F82FCA1D3BDAB31 /* Pods-CPayDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CPayDemo"; path = Pods_CPayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ABF676BDEB206E631A587CE035A6EF7B /* CPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8DA59962115E7646CD8DDB5D0D3A66D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8EAF1746A58EF973E17623CA2C3681D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9895F7481E9AE7F71F82FCA1D3BDAB31 /* Pods_CPayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CPayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; };
+		ABF676BDEB206E631A587CE035A6EF7B /* CPay.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CPay.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC475FD0196304E2E3F4AA31A3E184DB /* Pods-CPayDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CPayDemo-frameworks.sh"; sourceTree = "<group>"; };
-		BC2B54F8D3A8EC7A561EA5A6B131C818 /* PayKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PayKit.xcframework; path = CPaySDK/Payment/CashApp/Ext/PayKit.xcframework; sourceTree = "<group>"; };
+		BC2B54F8D3A8EC7A561EA5A6B131C818 /* PayKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = PayKit.xcframework; path = CPaySDK/Payment/CashApp/Ext/PayKit.xcframework; sourceTree = "<group>"; };
 		C6D4164FAB3BF3E33587F924EB0D4BE8 /* CPay-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "CPay-xcframeworks.sh"; sourceTree = "<group>"; };
 		D334FAF1CB31CEBA88D00A8BC1AE9AA8 /* Pods-CPayDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CPayDemo-dummy.m"; sourceTree = "<group>"; };
-		D556A673C4E34546B993A37F756CC590 /* CPay.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CPay.xcframework; path = CPaySDK/Core/CPay.xcframework; sourceTree = "<group>"; };
+		D556A673C4E34546B993A37F756CC590 /* CPay.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = CPay.xcframework; path = CPaySDK/Core/CPay.xcframework; sourceTree = "<group>"; };
 		D6869FF6F6953C61BCE4386B89626409 /* Pods-CPayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DA7847EAFE23F8F31E7D422D00BC4F8F /* Pods-CPayDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CPayDemo-umbrella.h"; sourceTree = "<group>"; };
 		F06808BB0F3BCEE52665301FFA6DC4C0 /* CPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPay.release.xcconfig; sourceTree = "<group>"; };
@@ -161,7 +162,7 @@
 		9ED0DA3AE427A8270308FDE5ECA10B4F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9895F7481E9AE7F71F82FCA1D3BDAB31 /* Pods-CPayDemo */,
+				9895F7481E9AE7F71F82FCA1D3BDAB31 /* Pods_CPayDemo.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,7 +268,7 @@
 			);
 			name = "Pods-CPayDemo";
 			productName = Pods_CPayDemo;
-			productReference = 9895F7481E9AE7F71F82FCA1D3BDAB31 /* Pods-CPayDemo */;
+			productReference = 9895F7481E9AE7F71F82FCA1D3BDAB31 /* Pods_CPayDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
