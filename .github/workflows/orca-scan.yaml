@@ -1,0 +1,25 @@
+name: Orca FS Scan Workflow
+on:
+  push:
+    branches: [ "develop", "test" ]
+  # NOTE: To enable scanning for pull requests, uncomment the section below.
+  pull_request:
+    branches: [ "main", "master", "develop", "test" ]
+  # NOTE: To schedule a daily scan at midnight, uncomment the section below.
+  #schedule:
+    #- cron: '0 0 * * *'
+jobs:
+  orca-fs-scan:
+    name: Orca fs Scan
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Orca FS Scan
+        uses: orcasecurity/shiftleft-fs-action@v1
+        with:
+          api_token: ${{ secrets.ORCA_SECURITY_API_TOKEN }}
+          project_key: "default"
+          path: "."
