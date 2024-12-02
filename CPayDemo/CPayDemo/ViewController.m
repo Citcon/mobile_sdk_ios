@@ -56,6 +56,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *noteField;
 @property (weak, nonatomic) IBOutlet UISwitch *autoCaptureSwitcher;
 @property (weak, nonatomic) IBOutlet UIButton *chargeBtn;
+@property (weak, nonatomic) IBOutlet UISwitch *requestTokenSwitcher;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -74,6 +75,10 @@
     NSLog(@"SDK Version: %@", [CPayManager getVersion]);
 
     NSLog(@"yunshanfu install: %d",[CPayManager isUnionPayInstalled]);
+    NSLog(@"weixin install: %d",[CPayManager isWechatInstalled]);
+    NSLog(@"alipay install: %d",[CPayManager isAlipayInstalled]);
+    NSLog(@"alipay hk install: %d",[CPayManager isAlipayHKInstalled]);
+
 }
 
 - (void)initUI {
@@ -205,6 +210,8 @@
         order.taxableAmount = _txtTaxableAmount.text;
         order.taxExemptAmount = _txtTaxExemptAmount.text;
         order.totalTaxAmount = _txtTotalTaxAmount.text;
+    } else {
+        order.requestToken = _requestTokenSwitcher.isOn;
     }
     
     
