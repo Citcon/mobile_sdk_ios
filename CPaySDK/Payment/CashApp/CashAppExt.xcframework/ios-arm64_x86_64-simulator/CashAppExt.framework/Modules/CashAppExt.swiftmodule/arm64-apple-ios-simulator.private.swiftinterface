@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 effective-4.1.50 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-4.1.50 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CashAppExt
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import CashAppExt
 import PayKit
 import Swift
@@ -27,10 +28,12 @@ import _SwiftConcurrencyShims
   @objc public var clientId: Swift.String?
   @objc public var orderId: Swift.String?
   @objc public var status: Swift.Int
-  @objc public var grand_id: Swift.String?
+  @objc public var grant_id: Swift.String?
   @objc public var expiry: Swift.String?
   @objc public var consumer_id: Swift.String?
   @objc public var error: Foundation.NSError?
+  @objc public var isOneTme: Swift.Bool
+  @objc public var cashtag: Swift.String?
   @objc deinit
 }
 public typealias CashAppCallback = (CashAppExt.CashAppResult) -> Swift.Void
@@ -38,8 +41,8 @@ public typealias CashAppCallback = (CashAppExt.CashAppResult) -> Swift.Void
   @objc deinit
   public func willDestroy()
   @objc public func payOrderOneTime(orderId: Swift.String, scopeId: Swift.String, amount: Swift.UInt, redirect: Swift.String, callback: @escaping CashAppExt.CashAppCallback)
+  @objc public func payOrderOnFile(orderId: Swift.String, scopeId: Swift.String, accountReferenceId: Swift.String, redirect: Swift.String, callback: @escaping CashAppExt.CashAppCallback)
   @objc public static func initSDK(clientId: Swift.String, env: Swift.Int = 0) -> Self
-  @objc public static func payOrder(orderId: Swift.String, scopeId: Swift.String, amount: Swift.UInt, redirect: Swift.String, callback: @escaping CashAppExt.CashAppCallback)
   @objc public static func hasImported() -> Swift.Bool
   @objc public static func destroy()
 }
