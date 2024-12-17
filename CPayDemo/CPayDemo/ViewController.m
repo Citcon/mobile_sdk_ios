@@ -199,14 +199,14 @@
     order.body = _txtBody.text;
     order.allowDuplicate = _swDuplicate.isOn;
     order.country = _txtCountry.text;
-    
+    order.consumerReference = _txtConsumerRef.text;
+
     
     if (![_txtVendor.text isEqualToString:@"cashapppay"]) {
         order.phone = _txtPhone.text;
         order.firstName = _txtFirstName.text;
         order.lastName = _txtLastName.text;
         order.email = _txtEmail.text;
-        order.consumerReference = _txtConsumerRef.text;
         order.taxableAmount = _txtTaxableAmount.text;
         order.taxExemptAmount = _txtTaxExemptAmount.text;
         order.totalTaxAmount = _txtTotalTaxAmount.text;
