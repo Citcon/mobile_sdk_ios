@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 @_exported import PayKit
 import Swift
@@ -279,7 +280,7 @@ public enum PaymentType : Swift.String, Swift.Codable, Swift.CaseIterable, Swift
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PayKit.PaymentType]
   public typealias RawValue = Swift.String
-  public static var allCases: [PayKit.PaymentType] {
+  nonisolated public static var allCases: [PayKit.PaymentType] {
     get
   }
   public var rawValue: Swift.String {
@@ -309,7 +310,7 @@ public enum Channel : Swift.String, Swift.Codable, Swift.CaseIterable, Swift.Equ
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PayKit.Channel]
   public typealias RawValue = Swift.String
-  public static var allCases: [PayKit.Channel] {
+  nonisolated public static var allCases: [PayKit.Channel] {
     get
   }
   public var rawValue: Swift.String {

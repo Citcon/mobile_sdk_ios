@@ -65,8 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *source;
 @property (nonatomic, copy) NSString *note;
 @property (nonatomic, assign) BOOL autoCapture;
-
-
+@property (nonatomic, assign) BOOL requestToken;
 
 
 
