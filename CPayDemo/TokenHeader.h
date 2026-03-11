@@ -7,7 +7,7 @@
 
 #ifndef TokenHeader_h
 #define TokenHeader_h
-#define SDK_TOKEN @"WB11FUBNUBOQFMFSHW2EFLS7VSG6GPKM" // uat cashapp
+#define SDK_TOKEN @"DSTGRT4KQWLRID91WAZU3BRE76CQP19S" // uat cashapp
 
 
 #endif /* TokenHeader_h */

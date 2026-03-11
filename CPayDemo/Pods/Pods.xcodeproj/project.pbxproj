@@ -20,13 +20,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		C3992C66FC1FF5604C2D7949F18F5D68 /* Pods-CPayDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D334FAF1CB31CEBA88D00A8BC1AE9AA8 /* Pods-CPayDemo-dummy.m */; };
-		D5A42F7CE5CD4CF4367E58F563A21C46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		EC5807AC2FC833E13DC2D18E104BA4D0 /* Pods-CPayDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA7847EAFE23F8F31E7D422D00BC4F8F /* Pods-CPayDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D74B6B6473866CBB9480C2D3C1BE616 /* Pods-CPayDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA7847EAFE23F8F31E7D422D00BC4F8F /* Pods-CPayDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C021F4D2F6EA9BF0BFD478AD3DBB91D /* Pods-CPayDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D334FAF1CB31CEBA88D00A8BC1AE9AA8 /* Pods-CPayDemo-dummy.m */; };
+		AE4BA07459E1A27FD796812C27E9C5C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		89E3B4D47F95FE24A9E116EC20F2FB46 /* PBXContainerItemProxy */ = {
+		EEB3DA782DDC2065B62C1D35D44FDC7D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -37,9 +37,9 @@
 
 /* Begin PBXFileReference section */
 		054F0F712F13F2A6C08239A4ED2EA323 /* Pods-CPayDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CPayDemo.modulemap"; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		448241A6E54789EC325C4894400EEB91 /* CPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPay.debug.xcconfig; sourceTree = "<group>"; };
 		6D308DE7FFB23E2962E32EC684632F1F /* PayKitUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = PayKitUI.xcframework; path = CPaySDK/Payment/CashApp/Ext/PayKitUI.xcframework; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8CA629D7200ABF5DD3CE162DAA502386 /* Pods-CPayDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPayDemo-Info.plist"; sourceTree = "<group>"; };
 		8DA59962115E7646CD8DDB5D0D3A66D9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		8EAF1746A58EF973E17623CA2C3681D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
@@ -60,11 +60,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4CA9DCA135A765D73B1859A61FC512A0 /* Frameworks */ = {
+		0E1F33409AA64BBEBC93FE6FD5321371 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5A42F7CE5CD4CF4367E58F563A21C46 /* Foundation.framework in Frameworks */,
+				AE4BA07459E1A27FD796812C27E9C5C7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,14 +136,6 @@
 				6D308DE7FFB23E2962E32EC684632F1F /* PayKitUI.xcframework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		5E04F90342F931564C014B0B079E9371 /* CPay */ = {
@@ -224,7 +216,7 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,14 +229,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		AD20E9A4E4D84DA68B995FF500AD4AFD /* Headers */ = {
+		87478305D320235C85E8B3D6E9E150D3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC5807AC2FC833E13DC2D18E104BA4D0 /* Pods-CPayDemo-umbrella.h in Headers */,
+				4D74B6B6473866CBB9480C2D3C1BE616 /* Pods-CPayDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,17 +253,17 @@
 /* Begin PBXNativeTarget section */
 		FE77BF6D3F862AFAC7C122503E815CF4 /* Pods-CPayDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00C5519D185C0929782B83031585575D /* Build configuration list for PBXNativeTarget "Pods-CPayDemo" */;
+			buildConfigurationList = 6E93250488D83678269FCC6E872B0B0E /* Build configuration list for PBXNativeTarget "Pods-CPayDemo" */;
 			buildPhases = (
-				AD20E9A4E4D84DA68B995FF500AD4AFD /* Headers */,
-				BDB5030F08AD32778D0CFCAD2181A120 /* Sources */,
-				4CA9DCA135A765D73B1859A61FC512A0 /* Frameworks */,
-				7AC0E7DA0863977CAEC92D9C0AB4798C /* Resources */,
+				87478305D320235C85E8B3D6E9E150D3 /* Headers */,
+				C6A261EF13A99D60AC640D7D31BEDAFC /* Sources */,
+				0E1F33409AA64BBEBC93FE6FD5321371 /* Frameworks */,
+				B98EAB873E756D771893A39B021DB1B7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7012414B2E5A2F318AAC7075F13C9CC7 /* PBXTargetDependency */,
+				914C340D2B4FD1CFE3A74D8A46BD037D /* PBXTargetDependency */,
 			);
 			name = "Pods-CPayDemo";
 			productName = Pods_CPayDemo;
@@ -276,8 +276,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -288,6 +288,8 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 9ED0DA3AE427A8270308FDE5ECA10B4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,7 +301,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7AC0E7DA0863977CAEC92D9C0AB4798C /* Resources */ = {
+		B98EAB873E756D771893A39B021DB1B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,88 +331,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BDB5030F08AD32778D0CFCAD2181A120 /* Sources */ = {
+		C6A261EF13A99D60AC640D7D31BEDAFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3992C66FC1FF5604C2D7949F18F5D68 /* Pods-CPayDemo-dummy.m in Sources */,
+				7C021F4D2F6EA9BF0BFD478AD3DBB91D /* Pods-CPayDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7012414B2E5A2F318AAC7075F13C9CC7 /* PBXTargetDependency */ = {
+		914C340D2B4FD1CFE3A74D8A46BD037D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CPay;
 			target = ECB5A4F0212802FFF9DC5EC1643F8120 /* CPay */;
-			targetProxy = 89E3B4D47F95FE24A9E116EC20F2FB46 /* PBXContainerItemProxy */;
+			targetProxy = EEB3DA782DDC2065B62C1D35D44FDC7D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		31AE17DE20A30C88CBEC5276DC86A1D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F06808BB0F3BCEE52665301FFA6DC4C0 /* CPay.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		43ED84489E2AFA16E6E30432AB9F13D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6869FF6F6953C61BCE4386B89626409 /* Pods-CPayDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CPayDemo/Pods-CPayDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CPayDemo/Pods-CPayDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5F5BA4D7610CCF2F50D977D9C8B55A48 /* Debug */ = {
+		195FD937F406A0895A3D6BF9F21415BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 448241A6E54789EC325C4894400EEB91 /* CPay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,44 +368,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		7770BBCB71A2014F4E82272233CCF3BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7446E64FE435C57EAC00241299BB88C /* Pods-CPayDemo.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CPayDemo/Pods-CPayDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CPayDemo/Pods-CPayDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -525,6 +435,45 @@
 			};
 			name = Debug;
 		};
+		9D27F9403BD57C1C311D9E2EE5016425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6869FF6F6953C61BCE4386B89626409 /* Pods-CPayDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-CPayDemo/Pods-CPayDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CPayDemo/Pods-CPayDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -587,18 +536,68 @@
 			};
 			name = Release;
 		};
+		A952C1A2EA3E22DC65F8763856178CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06808BB0F3BCEE52665301FFA6DC4C0 /* CPay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2B37DBB2C57D2C61617FBE4B53D497B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7446E64FE435C57EAC00241299BB88C /* Pods-CPayDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-CPayDemo/Pods-CPayDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CPayDemo/Pods-CPayDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00C5519D185C0929782B83031585575D /* Build configuration list for PBXNativeTarget "Pods-CPayDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				43ED84489E2AFA16E6E30432AB9F13D9 /* Debug */,
-				7770BBCB71A2014F4E82272233CCF3BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -608,11 +607,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6E93250488D83678269FCC6E872B0B0E /* Build configuration list for PBXNativeTarget "Pods-CPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D27F9403BD57C1C311D9E2EE5016425 /* Debug */,
+				E2B37DBB2C57D2C61617FBE4B53D497B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C6EF06F090EFC31B138F8D59DD48AC07 /* Build configuration list for PBXAggregateTarget "CPay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F5BA4D7610CCF2F50D977D9C8B55A48 /* Debug */,
-				31AE17DE20A30C88CBEC5276DC86A1D5 /* Release */,
+				195FD937F406A0895A3D6BF9F21415BE /* Debug */,
+				A952C1A2EA3E22DC65F8763856178CC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
