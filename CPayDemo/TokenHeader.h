@@ -7,7 +7,9 @@
 
 #ifndef TokenHeader_h
 #define TokenHeader_h
-#define SDK_TOKEN @"WB11FUBNUBOQFMFSHW2EFLS7VSG6GPKM" // uat cashapp
+// Put your own Citcon token here. Left empty on purpose: this is a public
+// repository, and the field it fills in the demo is editable at runtime.
+#define SDK_TOKEN @""
 
 
 #endif /* TokenHeader_h */
